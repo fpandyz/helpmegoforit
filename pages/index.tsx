@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-      <div>TourmalineCore</div>
+    <div>TourmalineCore</div>
   );
 }
