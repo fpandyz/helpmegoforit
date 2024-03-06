@@ -13,9 +13,9 @@
     },
     "files.eol": "\n",
     "editor.tabSize": 2,
-    // "stylelint.validate": ["css", "scss"],
+    "stylelint.validate": ["css", "scss"],
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit",
-      // "source.fixAll.stylelint": "explicit"
+      "source.fixAll.stylelint": "explicit"
     }
 } 
