@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: $ff-montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  color: $color-white;
+  background-color: $color-black;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $pd-mobile;
+  padding-left: $pd-mobile;
+  width: 100%;
+  max-width: 1456px;
+
+  @include tablet {
+    padding-right: $pd-tablet;
+    padding-left: $pd-tablet;
+  }
+
+  @include tablet-xl {
+    padding-right: $pd-tablet-xl;
+    padding-left: $pd-tablet-xl;
+  }
+
+  @include desktop {
+    padding-right: $pd-desktop;
+    padding-left: $pd-desktop;
+  }
+
+  @include desktop-xl {
+    padding-right: $pd-desktop-xl;
+    padding-left: $pd-desktop-xl;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}

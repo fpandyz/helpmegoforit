@@ -1,0 +1,93 @@
+h1,
+h2,
+h3,
+h4,
+blockquote,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.title-type-1 {
+  font-size: 40px;
+  line-height: 1.2;
+
+  @include tablet-xl {
+    font-size: 44px;
+    line-height: 1.18;
+  }
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 1.08;
+  }
+
+  @include desktop-xl {
+    font-size: 64px;
+    line-height: 1.125;
+  }
+}
+
+.title-type-2 {
+  font-size: 24px;
+  line-height: 1.33;
+
+  @include tablet-xl {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+
+  @include desktop-xl {
+    font-size: 48px;
+    line-height: 1.125;
+  }
+}
+
+.text-type-1 {
+  font-size: 22px;
+  line-height: 1.375;
+
+  @include tablet-xl {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  @include desktop-xl {
+    font-size: 32px;
+  }
+}
+
+.text-type-2 {
+  font-size: 14px;
+  line-height: 1.43;
+
+  @include tablet-xl {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  @include desktop-xl {
+    font-size: 24px;
+  }
+}
