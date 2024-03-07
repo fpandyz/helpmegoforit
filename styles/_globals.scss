@@ -35,8 +35,8 @@ body {
   }
 
   @include desktop-xl {
-    padding-right: $pd-desktop-xl;
-    padding-left: $pd-desktop-xl;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
