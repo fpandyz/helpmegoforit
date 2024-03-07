@@ -5,7 +5,6 @@ body {
   height: 100%;
   box-sizing: border-box;
   font-family: $ff-montserrat;
-  font-weight: 500;
   font-size: 16px;
   color: $color-white;
   background-color: $color-black;
@@ -41,6 +40,7 @@ body {
 }
 
 .title-type-1 {
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.2;
 
@@ -61,6 +61,7 @@ body {
 }
 
 .title-type-2 {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.33;
 
@@ -81,6 +82,7 @@ body {
 }
 
 .text-type-1 {
+  font-weight: 500;
   font-size: 22px;
   line-height: 1.375;
 
@@ -100,6 +102,7 @@ body {
 }
 
 .text-type-2 {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
 
