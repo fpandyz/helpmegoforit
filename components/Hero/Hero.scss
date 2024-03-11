@@ -25,17 +25,11 @@
 
   &__inner {
     position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px;
-
-    @include tablet-xl {
-      gap: 8px;
-    }
   }
 
   &__image {
+    display: block;
+    margin: 0 auto;
     width: 147px;
     height: 59px;
 
@@ -75,6 +69,8 @@
   }
 
   &__title {
+    margin-top: 5px;
+    margin-bottom: 4px;
     font-weight: inherit;
     font-size: 28px;
     text-align: center;
@@ -107,6 +103,11 @@
         line-height: 1.125;
       }
     }
+
+    @include tablet {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
   }
 
   &__subtitle {
@@ -128,6 +129,7 @@
   &__arrow {
     position: absolute;
     bottom: 40px;
+    display: block;
     width: 17px;
     height: 64px;
 
