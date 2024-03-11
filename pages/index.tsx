@@ -1,5 +1,10 @@
-export default function Home() {
+import Hero from '../components/Hero/Hero';
+import Layout from '../components/Layout/Layout';
+
+export default function HomePage() {
   return (
-    <div>TourmalineCore</div>
+    <Layout mainClassName="">
+      <Hero />
+    </Layout>
   );
 }
