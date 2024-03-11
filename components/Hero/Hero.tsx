@@ -11,7 +11,7 @@ export default function Hero() {
         <img srcSet="images/hero-bg-mobile.gif" alt="heroBackground" />
       </picture>
       <div className="container hero__wrapper">
-        <div className="hero__content">
+        <div className="hero__inner">
           <picture className="hero__image">
             <source
               srcSet="images/hero-image.png"
