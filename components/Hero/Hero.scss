@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../../public/images/hero-block-bg-mobile.gif");
+  background-image: url("../../public/images/hero-bg-mobile.gif");
   background-size: cover;
 
   &__wrapper {
@@ -122,6 +122,6 @@
   }
 
   @include desktop {
-    background-image: url("../../public/images/hero-block-bg-desktop.gif");
+    background-image: url("../../public/images/hero-bg-desktop.gif");
   }
 }
