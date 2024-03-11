@@ -27,13 +27,13 @@ export default function Hero() {
             Frontend Developers
           </h2>
         </div>
-        <Image
-          className="hero__arrow"
-          src="images/hero-arrow.svg"
-          width={17}
-          height={64}
-          alt="heroArrow"
-        />
+        <span className="hero__arrow">
+          <Image
+            src="images/hero-arrow.svg"
+            fill
+            alt="heroArrow"
+          />
+        </span>
       </div>
     </section>
   );
