@@ -3,6 +3,13 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="hero">
+      <picture className="hero__background">
+        <source
+          srcSet="images/hero-bg-desktop.gif"
+          media="(min-width: 1024px)"
+        />
+        <img srcSet="images/hero-bg-mobile.gif" alt="heroBackground" />
+      </picture>
       <div className="container hero__wrapper">
         <div className="hero__content">
           <picture className="hero__image">
