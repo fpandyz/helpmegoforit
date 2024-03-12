@@ -1,46 +1,37 @@
-import Image from 'next/image';
+import { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-export default function About() {
-  // const [animated, setAnimated] = useState<'not' | 'start' | 'end'>('not');
+export function About() {
+  const [viewRef, inView] = useInView(
+    {
+      threshold: 0.9,
+      triggerOnce: true,
+    },
+  );
+  const videoRef = useRef(null);
 
-  // useEffect(() => {
-  //   if (animated === 'not') {
-  //     const options = {
-  //       root: document.querySelector('document'),
-  //       rootMargin: '5px',
-  //       threshold: 0.5,
-  //     };
-
-  //     const callback = () => {
-  //       setAnimated('start');
-  //       setTimeout(() => setAnimated('end'), 5000);
-  //     };
-
-  //     const observer = new IntersectionObserver(callback, options);
-
-  //     const target = document.getElementById('puzzle');
-  //     observer.observe(target!);
-  //   }
-  // }, []);
-
-  // console.log(animated);
-
-  // function getImage() {
-  //   if (animated === 'not') {
-  //     return <Image id="puzzle" src="/images/about-puzzle-static.png" alt="puzzle" fill />;
-  //   }
-  //   if (animated === 'start') {
-
-  //   }
-  //   return <Image id="puzzle" src="/images/about-puzzle-static.png" alt="puzzle" fill />;
-  // }
+  useEffect(() => {
+    if (inView) {
+      const video = document.getElementById('puzzle') as HTMLVideoElement;
+      video.play();
+    }
+  }, [inView]);
 
   return (
     <section className="about">
       <div className="container about__wrapper">
-        <span className="about__image">
-          <Image id="puzzle" src="/images/about-puzzle.gif" alt="puzzle" fill />
-        </span>
+        <div
+          ref={viewRef}
+          className="about__video"
+        >
+          <video
+            ref={videoRef}
+            id="puzzle"
+            src="/video/puzzle.mp4"
+            playsInline
+            muted
+          />
+        </div>
         <h2 className="about__title title-type-2">
           Добавим к базовым знаниям навыки для создания сложного приложения
         </h2>

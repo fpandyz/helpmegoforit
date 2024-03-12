@@ -14,26 +14,30 @@
     }
   }
 
-  &__image {
-    @include tablet {
-      position: relative;
-      width: 340px;
-      height: 336px;
-    }
+  &__video {
+    display: block;
 
-    @include tablet-xl {
-      width: 436px;
-      height: 430px;
-    }
+    video {
+      @include tablet {
+        position: relative;
+        width: 340px;
+        height: 336px;
+      }
 
-    @include desktop {
-      width: 596px;
-      height: 578px;
-    }
+      @include tablet-xl {
+        width: 436px;
+        height: 430px;
+      }
 
-    @include desktop-xl {
-      width: 712px;
-      height: 733px;
+      @include desktop {
+        width: 596px;
+        height: 578px;
+      }
+
+      @include desktop-xl {
+        width: 712px;
+        height: 733px;
+      }
     }
   }
 
