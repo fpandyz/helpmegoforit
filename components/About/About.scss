@@ -1,0 +1,83 @@
+.about {
+  display: none;
+
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    @include desktop-xl {
+      gap: 32px;
+    }
+  }
+
+  &__video {
+    video {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include tablet {
+      position: relative;
+      width: 340px;
+      height: 336px;
+    }
+
+    @include tablet-xl {
+      width: 436px;
+      height: 430px;
+    }
+
+    @include desktop {
+      width: 596px;
+      height: 578px;
+    }
+
+    @include desktop-xl {
+      width: 712px;
+      height: 733px;
+    }
+  }
+
+  &__title {
+    @include tablet {
+      max-width: 340px;
+    }
+
+    @include tablet-xl {
+      max-width: 436px;
+    }
+
+    @include desktop {
+      max-width: 596px;
+    }
+
+    @include desktop-xl {
+      max-width: 712px;
+    }
+  }
+
+  @include tablet {
+    display: block;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  @include tablet-xl {
+    padding-top: 169px;
+    padding-bottom: 169px;
+  }
+
+  @include desktop {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+
+  @include desktop-xl {
+    padding-top: 174px;
+    padding-bottom: 174px;
+  }
+}
