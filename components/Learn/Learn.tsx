@@ -4,6 +4,7 @@ import IconHeart from '../../public/images/learn-heart.svg';
 import IconBox from '../../public/images/learn-box.svg';
 import IconHand from '../../public/images/learn-hand.svg';
 import IconQuestions from '../../public/images/learn-question.svg';
+import { Author } from './components/Author/Author';
 
 const learnCards = [
   {
@@ -11,11 +12,11 @@ const learnCards = [
     icon: IconTraces,
   },
   {
-    description: 'Делать независимый от бекенда фронтенд',
+    description: 'Делать независимый от\xA0бекенда фронтенд',
     icon: IconHeart,
   },
   {
-    description: 'Разворачивать фронтенд в облаке',
+    description: 'Разворачивать фронтенд в\xA0облаке',
     icon: IconBox,
   },
   {
@@ -28,7 +29,7 @@ const learnCards = [
   },
 ];
 
-export default function Learn() {
+export function Learn() {
   return (
     <section className="learn">
       <div className="container learn__wrapper">
@@ -62,6 +63,14 @@ export default function Learn() {
             </div>
           ))}
         </div>
+        <picture className="learn__background">
+          <source
+            srcSet="images/blue-bg-big.png"
+            media="(min-width: 1920px)"
+          />
+          <img srcSet="images/blue-bg-small.png" alt="blueBackground" />
+        </picture>
+        <Author />
       </div>
     </section>
   );
