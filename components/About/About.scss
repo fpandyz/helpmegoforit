@@ -45,7 +45,6 @@
   &__title {
     @include tablet {
       max-width: 340px;
-      font-weight: 400;
     }
 
     @include tablet-xl {
