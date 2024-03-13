@@ -8,16 +8,19 @@
 
   &__description {
     display: block;
-    padding-right: 87px;
     font-weight: 400;
     color: $color-white-80;
 
-    @include tablet-xl {
-      padding-right: 110px;
-    }
+    &--pd {
+      padding-right: 87px;
 
-    @include desktop-xl {
-      padding-right: 215px;
+      @include tablet-xl {
+        padding-right: 110px;
+      }
+
+      @include desktop-xl {
+        padding-right: 215px;
+      }
     }
   }
 

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import clsx from 'clsx';
 
 export function Card({
   description,
@@ -9,7 +10,10 @@ export function Card({
 }) {
   return (
     <div key={description} className="card">
-      <span className="card__description text-type-3">
+      <span className={clsx('card__description text-type-3', {
+        'card__description--pd': icon,
+      })}
+      >
         {description}
       </span>
       {icon && (
