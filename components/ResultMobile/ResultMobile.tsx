@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { Card } from '../Card/Card';
 import IconArrow from '../../public/images/arrow.svg';
 
-const resultMobileCars = [
+const resultMobileCards = [
   {
     description: 'Майндсет того, как именно работать вне\xA0зависимости от\xA0используемых инструментов',
   },
@@ -36,7 +36,7 @@ export function ResultMobile() {
         </h2>
         <div className="result-mobile__inner">
           <div className="result-mobile__cards">
-            {resultMobileCars.map(({ description }) => (
+            {resultMobileCards.map(({ description }) => (
               <Card
                 key={description}
                 description={description}
