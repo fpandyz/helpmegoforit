@@ -1,10 +1,7 @@
 .learn {
+  position: relative;
   padding-top: 72px;
   padding-bottom: 72px;
-
-  &__wrapper {
-    position: relative;
-  }
 
   &__title {
     display: none;
@@ -44,7 +41,7 @@
   &__background {
     position: absolute;
     right: 0;
-    bottom: 140px;
+    bottom: 320px;
     width: 376px;
     height: 664px;
     pointer-events: none;
@@ -55,19 +52,23 @@
     }
 
     @include tablet {
+      bottom: 250px;
       width: 731px;
       height: 681px;
     }
 
     @include tablet-xl {
-      bottom: 320px;
+      bottom: 410px;
       width: 845px;
       height: 777px;
     }
 
+    @include desktop {
+      bottom: 390px;
+    }
+
     @include desktop-xl {
-      right: -232px;
-      bottom: -250px;
+      bottom: -135px;
       width: 944px;
       height: 1455px;
     }
