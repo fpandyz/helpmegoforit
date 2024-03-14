@@ -6,7 +6,7 @@ import IconQuestions from '../../public/images/learn-question.svg';
 import { Author } from './components/Author/Author';
 import { Card } from '../Card/Card';
 
-const learnCards = [
+const LEARN_CARDS = [
   {
     description: 'Решать сложные задачи простыми шагами',
     icon: IconTraces,
@@ -45,7 +45,7 @@ export function Learn() {
             Вместе научимся
           </h2>
 
-          {learnCards.map((
+          {LEARN_CARDS.map((
             {
               description,
               icon,
