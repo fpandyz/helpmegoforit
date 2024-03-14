@@ -1,3 +1,4 @@
+import { Buzzword } from '@/components/Buzzword/Buzzword';
 import { ResultMobile } from '../components/ResultMobile/ResultMobile';
 import { Result } from '../components/Result/Result';
 import { Learn } from '../components/Learn/Learn';
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Learn />
       <ResultMobile />
       <Result />
+      <Buzzword />
     </Layout>
   );
 }
