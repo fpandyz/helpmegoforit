@@ -8,12 +8,11 @@ export function About() {
       triggerOnce: true,
     },
   );
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     if (inView) {
-      const video = document.getElementById('puzzle') as HTMLVideoElement;
-      video.play();
+      videoRef.current?.play();
     }
   }, [inView]);
 
@@ -26,14 +25,13 @@ export function About() {
         >
           <video
             ref={videoRef}
-            id="puzzle"
             src="/video/puzzle.mp4"
             playsInline
             muted
           />
         </div>
         <h2 className="about__title title-type-2">
-          Добавим к базовым знаниям навыки для создания сложного приложения
+          Добавим к базовым знаниям навыки для&nbsp;создания сложного приложения
         </h2>
       </div>
     </section>
