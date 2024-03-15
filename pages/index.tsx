@@ -1,4 +1,4 @@
-import { Conditions } from '@/components/Conditions/Conditions';
+import { Conditions } from '../components/Conditions/Conditions';
 import { Learn } from '../components/Learn/Learn';
 import { Hero } from '../components/Hero/Hero';
 import { Layout } from '../components/Layout/Layout';
