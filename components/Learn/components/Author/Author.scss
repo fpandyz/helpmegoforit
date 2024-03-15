@@ -1,0 +1,101 @@
+.author {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 94px;
+  gap: 24px;
+
+  &__info {
+    display: flex;
+    gap: 8px;
+
+    @include tablet {
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  &__image {
+    display: block;
+    height: 48px;
+    min-width: 48px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include desktop {
+      height: 66px;
+      min-width: 66px;
+    }
+  }
+
+  &__description {
+    color: $color-white-60;
+
+    @include desktop {
+      margin-top: 4px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: $color-link;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      width: 100%;
+      height: 1px;
+      background: $color-link;
+    }
+
+    &:hover,
+    &:hover::before {
+      background-image: $color-gradient;
+    }
+
+    &:hover {
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__citation {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+
+    @include tablet {
+      display: block;
+
+      &--mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__quotes {
+    display: block;
+    margin-bottom: 8px;
+    width: 23px;
+    height: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  @include desktop-xl {
+    gap: 32px;
+  }
+}
