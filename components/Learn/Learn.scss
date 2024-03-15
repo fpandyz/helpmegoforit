@@ -46,11 +46,6 @@
     height: 664px;
     pointer-events: none;
 
-    img {
-      width: 100%;
-      height: 100%;
-    }
-
     @include tablet {
       bottom: 250px;
       width: 731px;
