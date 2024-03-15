@@ -1,6 +1,6 @@
 import { Card } from '../Card/Card';
 
-const resultCards = [
+const RESULT_CARDS = [
   {
     description: 'Майндсет того, как именно работать вне\xA0зависимости от\xA0используемых инструментов',
   },
@@ -21,7 +21,7 @@ export function Result() {
           <img srcSet="images/result-image-small.png" alt="result" />
         </picture>
         <div className="result__cards">
-          {resultCards.map(({ description }) => (
+          {RESULT_CARDS.map(({ description }) => (
             <Card
               key={description}
               description={description}
