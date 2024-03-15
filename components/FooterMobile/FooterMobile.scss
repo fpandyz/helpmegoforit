@@ -1,0 +1,54 @@
+.footer-mobile {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 8px;
+
+  &__image {
+    position: absolute;
+    left: 106px;
+    bottom: 39px;
+    width: 114px;
+    height: 73px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    &--not-mobile {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  &__logo-text {
+    color: $color-white-80;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__logo-icon {
+    width: 14px;
+    height: 19px;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
