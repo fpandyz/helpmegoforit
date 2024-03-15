@@ -11,7 +11,7 @@ export function Card({
   return (
     <div key={description} className="card">
       <span className={clsx('card__description text-type-3', {
-        'card__description--pd': icon,
+        'card__description--icon': icon,
       })}
       >
         {description}

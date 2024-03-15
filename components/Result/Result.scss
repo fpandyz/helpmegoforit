@@ -18,16 +18,16 @@
       margin-left: auto;
       width: calc(50% - 12px);
 
-      > *:not(:last-child) {
-        margin-bottom: 24px;
+      & + & {
+        margin-top: 24px;
       }
     }
 
     @include desktop-xl {
       width: calc(50% - 20px);
 
-      > *:not(:last-child) {
-        margin-bottom: 32px;
+      & + & {
+        margin-top: 32px;
       }
     }
   }
