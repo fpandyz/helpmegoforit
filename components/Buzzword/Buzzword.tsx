@@ -59,7 +59,7 @@ const BUZZWORDS_CARDS = [
   },
   {
     description: 'TDD',
-    link: '',
+    link: 'https://techtrain.ru/talks/ec239e2202b04247889622d4240f2be3/?referer=/schedule/days/',
   },
   {
     description: 'Dev\xA0Container\xA0in\xA0VSCode',
