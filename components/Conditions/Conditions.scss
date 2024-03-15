@@ -1,0 +1,89 @@
+.conditions {
+  position: relative;
+  z-index: 1;
+  padding-top: 72px;
+  padding-bottom: 104px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    &--not-visible-mobile {
+      display: none;
+    }
+
+    @include tablet {
+      width: 50%;
+
+      &--not-visible-mobile {
+        display: inline;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include tablet {
+      margin-left: auto;
+      width: 50%;
+      gap: 24px;
+    }
+
+    @include desktop-xl {
+      gap: 32px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -120px;
+    z-index: -1;
+    width: 375px;
+    height: 311px;
+    pointer-events: none;
+
+    @include tablet {
+      bottom: -126px;
+      width: 768px;
+      height: 515px;
+    }
+
+    @include tablet-xl {
+      bottom: -120px;
+      width: 1024px;
+      height: 687px;
+    }
+
+    @include desktop {
+      bottom: -130px;
+      width: 1366px;
+      height: 917px;
+    }
+
+    @include desktop-xl {
+      bottom: -175px;
+      width: 1920px;
+      height: 1289px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 104px;
+    padding-bottom: 144px;
+  }
+
+  @include desktop {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+}

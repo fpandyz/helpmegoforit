@@ -6,18 +6,29 @@
   padding: 32px 24px;
   background-color: $color-black-card;
 
+  &__title {
+    padding-bottom: 8px;
+
+    @include desktop {
+      padding-bottom: 16px;
+    }
+  }
+
   &__description {
     display: block;
-    padding-right: 87px;
     font-weight: 400;
     color: $color-white-80;
 
-    @include tablet-xl {
-      padding-right: 110px;
-    }
+    &--icon {
+      padding-right: 87px;
 
-    @include desktop-xl {
-      padding-right: 215px;
+      @include tablet-xl {
+        padding-right: 110px;
+      }
+
+      @include desktop-xl {
+        padding-right: 215px;
+      }
     }
   }
 
@@ -30,8 +41,6 @@
     height: 100%;
 
     img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
     }
 

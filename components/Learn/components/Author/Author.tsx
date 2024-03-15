@@ -32,7 +32,7 @@ export function Author() {
           <p className="author__name text-type-2">Александр Шинкарев</p>
           <p className="author__description text-type-2">
             Автор курса, разработчик с 12-летним опытом, фанат&nbsp;
-            <a className="author__link" href={LINK} target="_blank">Терри&nbsp;Пратчетта</a>
+            <a className="link" href={LINK} target="_blank">Терри&nbsp;Пратчетта</a>
           </p>
         </div>
       </div>
