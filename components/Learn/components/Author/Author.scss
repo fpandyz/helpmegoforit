@@ -6,6 +6,7 @@
 
   &__info {
     display: flex;
+    order: 2;
     gap: 8px;
 
     @include tablet {
@@ -21,7 +22,6 @@
 
     @include desktop {
       height: 66px;
-      min-width: 66px;
     }
   }
 
@@ -59,30 +59,59 @@
   }
 
   &__citation {
-    display: none;
+    position: relative;
+    order: 0;
 
-    &--mobile {
-      display: block;
+    &-quotes {
+      display: none;
+
+      @include tablet {
+        display: inline;
+      }
+
+      @include tablet-xl {
+        display: inline;
+      }
+
+      @include desktop {
+        display: inline;
+      }
+
+      @include desktop-xl {
+        display: inline;
+      }
     }
 
     @include tablet {
-      display: block;
-
-      &--mobile {
-        display: none;
-      }
+      order: 3;
     }
   }
 
   &__quotes {
+    position: absolute;
+    top: -30px;
     display: block;
-    margin-bottom: 8px;
-    width: 23px;
-    height: 16px;
-  }
+    width: 27px;
+    height: 19px;
+    background-image: url("../../../../public/images/citation-quotes.svg");
 
-  @include tablet {
-    margin-bottom: 0;
+    @include tablet {
+      display: none;
+      margin-bottom: 0;
+    }
+
+    @include tablet-xl {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
+
+    @include desktop-xl {
+      display: none;
+      gap: 32px;
+    }
   }
 
   @include desktop-xl {
