@@ -4,25 +4,19 @@
   &__image {
     @include tablet {
       position: absolute;
-      left: 396px;
+      left: 51%;
       bottom: 70px;
       width: 114px;
       height: 73px;
     }
 
-    @include tablet-xl {
-      left: 524px;
-    }
-
     @include desktop {
-      left: 695px;
       bottom: 55px;
       width: 172px;
       height: 118px;
     }
 
     @include desktop-xl {
-      left: 976px;
       bottom: 63px;
       width: 243px;
       height: 167px;
@@ -39,8 +33,17 @@
   }
 
   &__links {
+    &--vk-and-tg {
+      justify-content: center;
+    }
+
+    &--github {
+      justify-content: end;
+    }
+
     @include tablet {
       display: flex;
+      flex-basis: 100%;
       flex-direction: row;
       gap: 8px;
     }
@@ -50,6 +53,7 @@
     @include tablet {
       display: flex;
       align-items: center;
+      flex-basis: 100%;
       flex-direction: row;
       justify-content: flex-start;
       gap: 8px;
@@ -64,11 +68,13 @@
 
   &__icon {
     @include tablet {
+      display: block;
       width: 24px;
       height: 24px;
     }
 
     @include desktop-xl {
+      display: block;
       width: 28px;
       height: 28px;
     }

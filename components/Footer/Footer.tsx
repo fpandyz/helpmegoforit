@@ -15,8 +15,8 @@ export function Footer() {
         />
       </span>
       <div className="container footer__wrapper">
-        <a href="https://www.tourmalinecore.com/ru">
-          <div className="footer__logo">
+        <a className="footer__links" href="https://www.tourmalinecore.com/ru">
+          <div className=" footer__logo">
             <span className="footer__logo-icon">
               <Image
                 src={Logo}
