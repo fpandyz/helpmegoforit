@@ -18,24 +18,19 @@ export function Result() {
             srcSet="images/result-image-large.png"
             media="(min-width: 1366px)"
           />
-          <img srcSet="images/result-image-small.png" alt="result" />
+          <img srcSet="images/result-image-small.png" alt="Результат после курса" />
         </picture>
         <div className="result__cards">
           {RESULT_CARDS.map(({ description }) => (
             <Card
+              className="result__card"
               key={description}
               description={description}
             />
           ))}
         </div>
       </div>
-      <picture className="result__background">
-        <source
-          srcSet="images/result-bg-large.png"
-          media="(min-width: 1366px)"
-        />
-        <img srcSet="images/result-bg-small.png" alt="resultBackground" />
-      </picture>
+      <div className="result__background" role="img" />
     </section>
   );
 }

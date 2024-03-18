@@ -17,15 +17,21 @@
     @include tablet {
       margin-left: auto;
       width: calc(50% - 12px);
+    }
 
+    @include desktop-xl {
+      width: calc(50% - 20px);
+    }
+  }
+
+  &__card {
+    @include tablet {
       & + & {
         margin-top: 24px;
       }
     }
 
     @include desktop-xl {
-      width: calc(50% - 20px);
-
       & + & {
         margin-top: 32px;
       }
@@ -33,8 +39,9 @@
   }
 
   &__image {
+    position: relative;
+
     @include tablet {
-      position: relative;
       width: 340px;
       height: 284px;
     }
@@ -56,12 +63,14 @@
   }
 
   &__background {
+    position: absolute;
+    right: 0;
+
     @include tablet {
-      position: absolute;
-      right: 0;
       bottom: -180px;
       width: 574px;
       height: 673px;
+      background: url("../../public/images/result-bg-small.png") no-repeat right;
     }
 
     @include tablet-xl {
@@ -74,10 +83,12 @@
       bottom: 135px;
       width: 646px;
       height: 910px;
+      background: url("../../public/images/result-bg-large.png") no-repeat right;
     }
 
     @include desktop-xl {
       bottom: -145px;
+      background: url("../../public/images/result-bg-large.png") no-repeat right;
     }
   }
 
