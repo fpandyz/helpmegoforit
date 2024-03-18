@@ -23,7 +23,7 @@
 
   &__inner {
     display: grid;
-    margin-bottom: 238px;
+    margin-bottom: 271px;
     gap: 8px;
     grid-template-columns: repeat(1, 1fr);
 
@@ -41,31 +41,32 @@
   &__background {
     position: absolute;
     right: 0;
-    bottom: 320px;
-    width: 376px;
+    bottom: 338px;
+    width: 100%;
     height: 664px;
-    pointer-events: none;
+    background: url("../../public/images/blue-bg-mobile.png") no-repeat right 0%;
 
     @include tablet {
-      bottom: 250px;
-      width: 731px;
+      bottom: 415px;
       height: 681px;
+      background: url("../../public/images/blue-bg-small.png") no-repeat right 0%;
     }
 
     @include tablet-xl {
-      bottom: 410px;
-      width: 845px;
+      bottom: 490px;
       height: 777px;
+      background: url("../../public/images/blue-bg-small.png") no-repeat right 0%;
     }
 
     @include desktop {
-      bottom: 390px;
+      bottom: 470px;
+      background: url("../../public/images/blue-bg-small.png") no-repeat right 0%;
     }
 
     @include desktop-xl {
-      bottom: -135px;
-      width: 944px;
+      bottom: -43px;
       height: 1455px;
+      background: url("../../public/images/blue-bg-big.png") no-repeat right 0%;
     }
   }
 
