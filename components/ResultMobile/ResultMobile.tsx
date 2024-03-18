@@ -31,7 +31,7 @@ export function ResultMobile() {
   return (
     <section className="result-mobile">
       <div className="container result-mobile__wrapper">
-        <h2 className="result-mobile__title title-type-2">
+        <h2 className="title-type-2 result-mobile__title">
           Результат после курса
         </h2>
         <div className="result-mobile__inner">

@@ -35,13 +35,13 @@ export function Learn() {
       <div className="container learn__wrapper">
         <div className="learn__inner">
 
-          <h2 className="learn__title learn__title--mobile title-type-2">
+          <h2 className="title-type-2 learn__title learn__title--mobile">
             На курсе
             <br />
             вместе научимся
           </h2>
 
-          <h2 className="learn__title title-type-2">
+          <h2 className="title-type-2 learn__title">
             Вместе научимся
           </h2>
 
