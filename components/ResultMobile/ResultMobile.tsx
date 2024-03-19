@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import { useInView } from 'react-intersection-observer';
-import { useEffect, useRef } from 'react';
 import { Card } from '../Card/Card';
 import IconArrow from '../../public/images/arrow.svg';
 
@@ -14,20 +12,6 @@ const RESULT_MOBILE_CARDS = [
 ];
 
 export function ResultMobile() {
-  const [viewRef, inView] = useInView(
-    {
-      threshold: 0.9,
-      triggerOnce: true,
-    },
-  );
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  useEffect(() => {
-    if (inView) {
-      videoRef.current?.play();
-    }
-  }, [inView]);
-
   return (
     <section className="result-mobile">
       <div className="container result-mobile__wrapper">
@@ -51,14 +35,14 @@ export function ResultMobile() {
             />
           </span>
           <div
-            ref={viewRef}
             className="result-mobile__video"
           >
             <video
-              ref={videoRef}
               src="/video/puzzle.mp4"
               playsInline
               muted
+              preload="none"
+              autoPlay
             />
           </div>
         </div>
