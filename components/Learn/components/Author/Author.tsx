@@ -24,11 +24,11 @@ export function Author() {
           />
         </span>
         <div className="author__wrapper">
-          <p className="text-type-2 author__name ">Александр Шинкарев</p>
-          <p className="text-type-2 author__description">
+          <div className="text-type-2 author__name ">Александр Шинкарев</div>
+          <div className="text-type-2 author__description">
             Автор курса, разработчик с 12-летним опытом, фанат&nbsp;
             <a className="author__link" href={LINK} target="_blank">Терри&nbsp;Пратчетта</a>
-          </p>
+          </div>
         </div>
       </div>
     </div>

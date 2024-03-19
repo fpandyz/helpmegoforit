@@ -77,16 +77,7 @@
         margin-bottom: 0;
       }
 
-      @include tablet-xl {
-        display: none;
-      }
-
-      @include desktop {
-        display: none;
-      }
-
       @include desktop-xl {
-        display: none;
         gap: 32px;
       }
     }
@@ -100,18 +91,6 @@
     display: none;
 
     @include tablet {
-      display: inline;
-    }
-
-    @include tablet-xl {
-      display: inline;
-    }
-
-    @include desktop {
-      display: inline;
-    }
-
-    @include desktop-xl {
       display: inline;
     }
   }
