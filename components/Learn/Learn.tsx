@@ -34,14 +34,9 @@ export function Learn() {
     <section className="learn">
       <div className="container learn__wrapper">
         <div className="learn__inner">
-          <h2 className="title-type-2 learn__title learn__title--mobile">
-            На курсе
-            <br />
-            вместе научимся
-          </h2>
-
           <h2 className="title-type-2 learn__title">
-            Вместе научимся
+            <span className="learn__title--mobile">На курсе</span>
+            вместе научимся
           </h2>
 
           {LEARN_CARDS.map((
