@@ -41,8 +41,6 @@ export function ResultMobile() {
               src="/video/puzzle.mp4"
               playsInline
               muted
-              preload="none"
-              autoPlay
             />
           </div>
         </div>

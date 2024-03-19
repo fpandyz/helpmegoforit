@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 export function About() {
   const [viewRef, inView] = useInView(
     {
-      threshold: 0.9,
+      threshold: 1,
       triggerOnce: true,
     },
   );
@@ -20,7 +20,6 @@ export function About() {
     <section className="about">
       <div className="container about__wrapper">
         <div
-          ref={viewRef}
           className="about__video"
         >
           <video
@@ -28,12 +27,15 @@ export function About() {
             src="/video/puzzle.mp4"
             playsInline
             muted
+            preload="none"
+            autoPlay
           />
         </div>
         <h2 className="about__title title-type-2">
           Добавим к базовым знаниям навыки для&nbsp;создания сложного приложения
         </h2>
       </div>
+      <div ref={viewRef} />
     </section>
   );
 }
