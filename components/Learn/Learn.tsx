@@ -34,7 +34,6 @@ export function Learn() {
     <section className="learn">
       <div className="container learn__wrapper">
         <div className="learn__inner">
-
           <h2 className="title-type-2 learn__title learn__title--mobile">
             На курсе
             <br />
@@ -58,7 +57,6 @@ export function Learn() {
             />
           ))}
         </div>
-        <div className="learn__background" role="img" />
         <Author />
       </div>
     </section>

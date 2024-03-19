@@ -3,6 +3,39 @@
   padding-top: 72px;
   padding-bottom: 72px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 338px;
+    width: 100%;
+    height: 664px;
+    background: url("../../public/images/blue-bg-mobile.png") no-repeat right;
+
+    @include tablet {
+      bottom: 371px;
+      height: 681px;
+      background: url("../../public/images/blue-bg-small.png") no-repeat right;
+    }
+
+    @include tablet-xl {
+      bottom: 490px;
+      height: 777px;
+      background: url("../../public/images/blue-bg-small.png") no-repeat right;
+    }
+
+    @include desktop {
+      bottom: 470px;
+      background: url("../../public/images/blue-bg-small.png") no-repeat right;
+    }
+
+    @include desktop-xl {
+      bottom: -43px;
+      height: 1455px;
+      background: url("../../public/images/blue-bg-big.png") no-repeat right;
+    }
+  }
+
   &__title {
     display: none;
     margin-bottom: 16px;
@@ -35,38 +68,6 @@
 
     @include desktop-xl {
       margin-bottom: 80px;
-    }
-  }
-
-  &__background {
-    position: absolute;
-    right: 0;
-    bottom: 338px;
-    width: 100%;
-    height: 664px;
-    background: url("../../public/images/blue-bg-mobile.png") no-repeat right 0%;
-
-    @include tablet {
-      bottom: 415px;
-      height: 681px;
-      background: url("../../public/images/blue-bg-small.png") no-repeat right 0%;
-    }
-
-    @include tablet-xl {
-      bottom: 490px;
-      height: 777px;
-      background: url("../../public/images/blue-bg-small.png") no-repeat right 0%;
-    }
-
-    @include desktop {
-      bottom: 470px;
-      background: url("../../public/images/blue-bg-small.png") no-repeat right 0%;
-    }
-
-    @include desktop-xl {
-      bottom: -43px;
-      height: 1455px;
-      background: url("../../public/images/blue-bg-big.png") no-repeat right 0%;
     }
   }
 

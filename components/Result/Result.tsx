@@ -30,7 +30,6 @@ export function Result() {
           ))}
         </div>
       </div>
-      <div className="result__background" role="img" />
     </section>
   );
 }

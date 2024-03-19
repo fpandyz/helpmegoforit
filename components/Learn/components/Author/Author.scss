@@ -63,6 +63,34 @@
     position: relative;
     order: 0;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      display: block;
+      width: 27px;
+      height: 19px;
+      background-image: url("../../../../public/images/citation-quotes.svg");
+
+      @include tablet {
+        display: none;
+        margin-bottom: 0;
+      }
+
+      @include tablet-xl {
+        display: none;
+      }
+
+      @include desktop {
+        display: none;
+      }
+
+      @include desktop-xl {
+        display: none;
+        gap: 32px;
+      }
+    }
+
     @include tablet {
       order: 3;
     }
@@ -85,33 +113,6 @@
 
     @include desktop-xl {
       display: inline;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    top: -30px;
-    display: block;
-    width: 27px;
-    height: 19px;
-    background-image: url("../../../../public/images/citation-quotes.svg");
-
-    @include tablet {
-      display: none;
-      margin-bottom: 0;
-    }
-
-    @include tablet-xl {
-      display: none;
-    }
-
-    @include desktop {
-      display: none;
-    }
-
-    @include desktop-xl {
-      display: none;
-      gap: 32px;
     }
   }
 

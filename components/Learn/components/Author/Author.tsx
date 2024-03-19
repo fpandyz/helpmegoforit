@@ -8,7 +8,6 @@ export function Author() {
     <div className="author">
 
       <div className="author__citation">
-        <div className="author__img" role="img" />
         <h2 className="title-type-2 author__text">
           <span className="author__quotes">«</span>
           В начале карьеры мы&nbsp;понимаем, что&nbsp;делаем ерунду,

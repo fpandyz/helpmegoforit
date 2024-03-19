@@ -1,6 +1,37 @@
 .result {
   display: none;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+
+    @include tablet {
+      bottom: -180px;
+      width: 574px;
+      height: 673px;
+      background: url("../../public/images/result-bg-small.png") no-repeat right;
+    }
+
+    @include tablet-xl {
+      bottom: 235px;
+      width: 574px;
+      height: 673px;
+    }
+
+    @include desktop {
+      bottom: 135px;
+      width: 646px;
+      height: 910px;
+      background: url("../../public/images/result-bg-large.png") no-repeat right;
+    }
+
+    @include desktop-xl {
+      bottom: -145px;
+      background: url("../../public/images/result-bg-large.png") no-repeat right;
+    }
+  }
+
   &__wrapper {
     @include tablet {
       display: flex;
@@ -59,36 +90,6 @@
     @include desktop-xl {
       height: 646px;
       min-width: 712px;
-    }
-  }
-
-  &__background {
-    position: absolute;
-    right: 0;
-
-    @include tablet {
-      bottom: -180px;
-      width: 574px;
-      height: 673px;
-      background: url("../../public/images/result-bg-small.png") no-repeat right;
-    }
-
-    @include tablet-xl {
-      bottom: 235px;
-      width: 574px;
-      height: 673px;
-    }
-
-    @include desktop {
-      bottom: 135px;
-      width: 646px;
-      height: 910px;
-      background: url("../../public/images/result-bg-large.png") no-repeat right;
-    }
-
-    @include desktop-xl {
-      bottom: -145px;
-      background: url("../../public/images/result-bg-large.png") no-repeat right;
     }
   }
 
