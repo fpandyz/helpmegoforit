@@ -5,12 +5,13 @@
     content: "";
     position: absolute;
     right: 0;
+    background-repeat: no-repeat;
 
     @include tablet {
       bottom: -180px;
       width: 574px;
       height: 673px;
-      background: url("../../public/images/result-bg-small.png") no-repeat right;
+      background: url("../../public/images/result-bg-small.png");
     }
 
     @include tablet-xl {
@@ -23,12 +24,11 @@
       bottom: 135px;
       width: 646px;
       height: 910px;
-      background: url("../../public/images/result-bg-large.png") no-repeat right;
+      background: url("../../public/images/result-bg-large.png");
     }
 
     @include desktop-xl {
       bottom: -145px;
-      background: url("../../public/images/result-bg-large.png") no-repeat right;
     }
   }
 
