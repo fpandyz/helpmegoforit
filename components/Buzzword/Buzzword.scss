@@ -90,7 +90,7 @@
   &__image {
     position: absolute;
     right: 16px;
-    bottom: 455px;
+    top: 39px;
     display: block;
     width: 224px;
     height: 156px;
@@ -102,24 +102,24 @@
 
     @include tablet {
       right: 32px;
-      bottom: 475px;
+      top: 146px;
     }
 
     @include tablet-xl {
       right: 64px;
-      bottom: 435px;
+      top: 134px;
     }
 
     @include desktop {
       right: 74px;
-      bottom: 465px;
+      top: 78px;
       width: 288px;
       height: 222px;
     }
 
     @include desktop-xl {
       right: 395px;
-      bottom: 680px;
+      top: 109px;
       width: 436px;
       height: 298px;
     }
