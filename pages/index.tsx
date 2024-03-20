@@ -1,5 +1,7 @@
+import { FooterMobile } from '@/components/FooterMobile/FooterMobile';
 import { Buzzword } from '@/components/Buzzword/Buzzword';
 import { Conditions } from '../components/Conditions/Conditions';
+import { Footer } from '../components/Footer/Footer';
 import { ResultMobile } from '../components/ResultMobile/ResultMobile';
 import { Result } from '../components/Result/Result';
 import { Learn } from '../components/Learn/Learn';
@@ -17,6 +19,8 @@ export default function HomePage() {
       <Result />
       <Buzzword />
       <Conditions />
+      <Footer />
+      <FooterMobile />
     </Layout>
   );
 }

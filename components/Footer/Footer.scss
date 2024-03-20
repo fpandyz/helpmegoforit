@@ -1,0 +1,106 @@
+.footer {
+  display: none;
+
+  &__image {
+    @include tablet {
+      position: absolute;
+      left: 51%;
+      bottom: 70px;
+      width: 114px;
+      height: 73px;
+    }
+
+    @include desktop {
+      bottom: 55px;
+      width: 172px;
+      height: 118px;
+    }
+
+    @include desktop-xl {
+      bottom: 63px;
+      width: 243px;
+      height: 167px;
+    }
+  }
+
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__links {
+    display: flex;
+
+    &--vk-and-tg {
+      justify-content: center;
+    }
+
+    &--github {
+      justify-content: end;
+    }
+
+    @include tablet {
+      flex-basis: 100%;
+      flex-direction: row;
+      gap: 8px;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      flex-basis: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+  }
+
+  &__logo-text {
+    @include tablet {
+      color: $color-white-80;
+    }
+  }
+
+  &__icon {
+    @include tablet {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    @include desktop-xl {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__logo-icon {
+    @include tablet {
+      width: 16px;
+      height: 22px;
+    }
+
+    @include desktop-xl {
+      width: 21px;
+      height: 29px;
+    }
+  }
+
+  @include tablet {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 24px;
+  }
+
+  @include desktop-xl {
+    padding-top: 120px;
+  }
+}
