@@ -9,7 +9,20 @@
       gap: 24px;
     }
 
+    @include tablet {
+      padding-bottom: 160px;
+    }
+
+    @include tablet-xl {
+      padding-bottom: 169px;
+    }
+
+    @include desktop {
+      padding-bottom: 95px;
+    }
+
     @include desktop-xl {
+      padding-bottom: 174px;
       gap: 32px;
     }
   }
@@ -62,22 +75,18 @@
 
   @include tablet {
     display: block;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 180px;
   }
 
   @include tablet-xl {
-    padding-top: 169px;
-    padding-bottom: 169px;
+    padding-top: 189px;
   }
 
   @include desktop {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 115px;
   }
 
   @include desktop-xl {
-    padding-top: 174px;
-    padding-bottom: 174px;
+    padding-top: 194px;
   }
 }

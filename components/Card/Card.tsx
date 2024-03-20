@@ -7,15 +7,17 @@ export function Card({
   linkText,
   description,
   icon,
+  className = '',
 }:{
   title?: string;
   link?: string;
   linkText?: string;
   description: string;
   icon?: string;
+  className?: string;
 }) {
   return (
-    <div key={description} className="card">
+    <div key={description} className={`card ${className}`}>
 
       {title && (
         <div className="card__title text-type-3">
