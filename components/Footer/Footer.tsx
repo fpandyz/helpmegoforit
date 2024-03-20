@@ -20,10 +20,10 @@ export function Footer() {
             <span className="footer__logo-icon">
               <Image
                 src={Logo}
-                alt="Logo"
+                alt="Логотип IT-компании Tourmaline Core"
               />
             </span>
-            <p className="footer__logo-text text-type-2">Tourmaline Core</p>
+            <p className="text-type-2 footer__logo-text">Tourmaline Core</p>
           </div>
         </a>
 

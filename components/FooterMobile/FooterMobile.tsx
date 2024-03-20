@@ -57,10 +57,10 @@ export function FooterMobile() {
             <span className="footer-mobile__logo-icon">
               <Image
                 src={Logo}
-                alt="Logo"
+                alt="Логотип IT-компании Tourmaline Core"
               />
             </span>
-            <p className="footer-mobile__logo-text text-type-2">Tourmaline Core</p>
+            <p className="text-type-2 footer-mobile__logo-text ">Tourmaline Core</p>
           </div>
         </a>
       </div>
