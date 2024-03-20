@@ -1,3 +1,5 @@
+import { ResultMobile } from '../components/ResultMobile/ResultMobile';
+import { Result } from '../components/Result/Result';
 import { Learn } from '../components/Learn/Learn';
 import { Hero } from '../components/Hero/Hero';
 import { Layout } from '../components/Layout/Layout';
@@ -9,7 +11,8 @@ export default function HomePage() {
       <Hero />
       <About />
       <Learn />
-
+      <ResultMobile />
+      <Result />
     </Layout>
   );
 }

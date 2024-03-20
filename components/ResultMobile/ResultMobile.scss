@@ -1,0 +1,42 @@
+.result-mobile {
+  padding-top: 72px;
+  padding-bottom: 72px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    gap: 8px;
+  }
+
+  &__arrow {
+    position: relative;
+    margin-bottom: 8px;
+    width: 12px;
+    height: 46px;
+  }
+
+  &__video {
+    width: 238px;
+    height: 229px;
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

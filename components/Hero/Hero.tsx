@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import IconArrow from '../../public/images/arrow.svg';
 
 export function Hero() {
   return (
@@ -36,7 +37,7 @@ export function Hero() {
         </div>
         <span className="hero__arrow">
           <Image
-            src="images/hero-arrow.svg"
+            src={IconArrow}
             fill
             alt="heroArrow"
           />
