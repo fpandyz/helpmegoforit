@@ -7,18 +7,20 @@ export function Card({
   linkText,
   description,
   icon,
+  className = '',
 }:{
   title?: string;
   link?: string;
   linkText?: string;
   description: string;
   icon?: string;
+  className?: string;
 }) {
   return (
-    <div key={description} className="card">
+    <div key={description} className={`card ${className}`}>
 
       {title && (
-        <div className="card__title text-type-3">
+        <div className="text-type-3 card__title ">
           {title}
           {link && linkText && (
             <a className="link" href={link} target="_blank">{linkText}</a>
@@ -27,9 +29,9 @@ export function Card({
       )}
 
       <span className={clsx('card__description', {
-        'card__description--icon text-type-3': icon,
+        'text-type-3 card__description--icon': icon,
         'text-type-3': description && !title,
-        'card__description--title text-type-2': title,
+        'text-type-2 card__description--title': title,
       })}
       >
         {description}

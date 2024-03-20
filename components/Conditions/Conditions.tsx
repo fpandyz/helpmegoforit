@@ -4,7 +4,7 @@ const CONDITIONS_CARDS = [
   {
     title: 'Расскажите о\xA0себе ',
     description: 'Мы ищем разработчиков, которым интересно узнать новые\xA0подходы в\xA0работе.',
-    link: 'link',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdVzFawz_-6L-ltYAMJVh3w9QsSIbSH1nddSbUjnHAfHp3cew/viewform',
     linkText: 'в\xA0гугл\xA0форме',
   },
   {
@@ -22,7 +22,7 @@ export function Conditions() {
     <section className="conditions">
       <div className="container conditions__wrapper">
 
-        <h2 className="conditions__title title-type-2">
+        <h2 className="title-type-2 conditions__title">
           Как принять участие в&nbsp;тестировании
           {' '}
           <span className="conditions__title--not-visible-mobile">
@@ -52,18 +52,6 @@ export function Conditions() {
           ))}
         </div>
       </div>
-
-      <picture className="conditions__background">
-        <source
-          srcSet="images/conditions-bg-large.png"
-          media="(min-width: 1366px)"
-        />
-        <source
-          srcSet="images/conditions-bg-small.png"
-          media="(min-width: 768px)"
-        />
-        <img srcSet="images/conditions-bg-mobile.png" alt="conditionsBackground" />
-      </picture>
     </section>
   );
 }

@@ -3,16 +3,51 @@
   padding-top: 72px;
   padding-bottom: 72px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 338px;
+    width: 100%;
+    height: 664px;
+    background-image: url("../../public/images/blue-bg-mobile.png");
+    background-position: right;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      bottom: 371px;
+      height: 777px;
+      background-image: url("../../public/images/blue-bg-small.png");
+    }
+
+    @include tablet-xl {
+      bottom: 490px;
+      height: 777px;
+    }
+
+    @include desktop {
+      bottom: 470px;
+    }
+
+    @include desktop-xl {
+      bottom: -43px;
+      height: 1455px;
+      background-image: url("../../public/images/blue-bg-big.png");
+    }
+  }
+
   &__title {
-    display: none;
     margin-bottom: 16px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
 
     &--mobile {
       display: block;
     }
 
     @include tablet {
-      display: block;
       margin-bottom: 0;
 
       &--mobile {
@@ -23,9 +58,9 @@
 
   &__inner {
     display: grid;
-    margin-bottom: 238px;
+    margin-bottom: 271px;
     gap: 8px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
 
     @include tablet {
       margin-bottom: 40px;
@@ -35,42 +70,6 @@
 
     @include desktop-xl {
       margin-bottom: 80px;
-    }
-  }
-
-  &__background {
-    position: absolute;
-    right: 0;
-    bottom: 320px;
-    width: 376px;
-    height: 664px;
-    pointer-events: none;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-
-    @include tablet {
-      bottom: 250px;
-      width: 731px;
-      height: 681px;
-    }
-
-    @include tablet-xl {
-      bottom: 410px;
-      width: 845px;
-      height: 777px;
-    }
-
-    @include desktop {
-      bottom: 390px;
-    }
-
-    @include desktop-xl {
-      bottom: -135px;
-      width: 944px;
-      height: 1455px;
     }
   }
 

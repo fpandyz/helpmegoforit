@@ -34,15 +34,9 @@ export function Learn() {
     <section className="learn">
       <div className="container learn__wrapper">
         <div className="learn__inner">
-
-          <h2 className="learn__title learn__title--mobile title-type-2">
-            На курсе
-            <br />
+          <h2 className="title-type-2 learn__title">
+            <span className="learn__title--mobile">На курсе</span>
             вместе научимся
-          </h2>
-
-          <h2 className="learn__title title-type-2">
-            Вместе научимся
           </h2>
 
           {LEARN_CARDS.map((
@@ -58,13 +52,6 @@ export function Learn() {
             />
           ))}
         </div>
-        <picture className="learn__background">
-          <source
-            srcSet="images/blue-bg-big.png"
-            media="(min-width: 1920px)"
-          />
-          <img srcSet="images/blue-bg-small.png" alt="blueBackground" />
-        </picture>
         <Author />
       </div>
     </section>
