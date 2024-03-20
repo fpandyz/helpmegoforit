@@ -6,6 +6,14 @@
   padding: 32px 24px;
   background-color: $color-black-card;
 
+  &__title {
+    padding-bottom: 8px;
+
+    @include desktop {
+      padding-bottom: 16px;
+    }
+  }
+
   &__description {
     display: block;
     font-weight: 400;

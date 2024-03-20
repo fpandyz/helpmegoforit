@@ -34,31 +34,6 @@
     }
   }
 
-  &__link {
-    position: relative;
-    color: $color-link;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 2px;
-      width: 100%;
-      height: 1px;
-      background: $color-link;
-    }
-
-    &:hover,
-    &:hover::before {
-      background-image: $color-gradient;
-    }
-
-    &:hover {
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
   &__citation {
     position: relative;
     order: 0;

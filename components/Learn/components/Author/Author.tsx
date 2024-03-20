@@ -27,7 +27,7 @@ export function Author() {
           <div className="text-type-2 author__name ">Александр Шинкарев</div>
           <div className="text-type-2 author__description">
             Автор курса, разработчик с 12-летним опытом, фанат&nbsp;
-            <a className="author__link" href={LINK} target="_blank">Терри&nbsp;Пратчетта</a>
+            <a className="link" href={LINK} target="_blank">Терри&nbsp;Пратчетта</a>
           </div>
         </div>
       </div>
