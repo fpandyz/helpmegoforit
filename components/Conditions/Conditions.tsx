@@ -22,7 +22,7 @@ export function Conditions() {
     <section className="conditions">
       <div className="container conditions__wrapper">
 
-        <h2 className="conditions__title title-type-2">
+        <h2 className="title-type-2 conditions__title">
           Как принять участие в&nbsp;тестировании
           {' '}
           <span className="conditions__title--not-visible-mobile">
