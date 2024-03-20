@@ -27,8 +27,7 @@ export function About() {
             src="/video/puzzle.mp4"
             playsInline
             muted
-            preload="none"
-            autoPlay
+            preload="auto"
           />
         </div>
         <h2 className="about__title title-type-2">
