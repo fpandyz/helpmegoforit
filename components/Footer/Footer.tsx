@@ -15,7 +15,7 @@ export function Footer() {
         />
       </span>
       <div className="container footer__wrapper">
-        <a className="footer__links" href="https://www.tourmalinecore.com/ru">
+        <a className="footer__links" href="https://www.tourmalinecore.com/ru" target="_blank">
           <div className=" footer__logo">
             <span className="footer__logo-icon">
               <Image
@@ -28,7 +28,7 @@ export function Footer() {
         </a>
 
         <div className="footer__links footer__links--vk-and-tg">
-          <a href="https://vk.com/tourmalinecore">
+          <a href="https://vk.com/tourmalinecore" target="_blank">
             <span className="footer__icon">
               <Image
                 src={IconVk}
@@ -36,7 +36,7 @@ export function Footer() {
               />
             </span>
           </a>
-          <a href="https://t.me/+70jzujiNgVxhMDRi">
+          <a href="https://t.me/+70jzujiNgVxhMDRi" target="_blank">
             <span className="footer__icon">
               <Image
                 src={IconTg}
@@ -47,7 +47,7 @@ export function Footer() {
         </div>
 
         <div className="footer__links footer__links--github">
-          <a href="https://github.com/fpandyz/helpmegoforit">
+          <a href="https://github.com/fpandyz/helpmegoforit" target="_blank">
             <span className="footer__icon">
               <Image
                 src={IconGit}

@@ -41,7 +41,7 @@ export function FooterMobile() {
               alt,
             },
           ) => (
-            <a key={iconSrc} href={link}>
+            <a key={iconSrc} href={link} target="_blank">
               <span className="footer-mobile__icon">
                 <Image
                   src={iconSrc}
@@ -52,7 +52,7 @@ export function FooterMobile() {
           ))}
         </div>
 
-        <a href="https://www.tourmalinecore.com/ru">
+        <a href="https://www.tourmalinecore.com/ru" target="_blank">
           <div className="footer-mobile__logo">
             <span className="footer-mobile__logo-icon">
               <Image
