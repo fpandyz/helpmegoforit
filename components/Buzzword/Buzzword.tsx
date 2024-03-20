@@ -82,7 +82,7 @@ export function Buzzword() {
         <img srcSet="images/buzzword-image-mobile.png" alt="После курса в резюме добавится" />
       </picture>
       <div className="container buzzword__wrapper">
-        <h2 className="buzzword__title title-type-2">
+        <h2 className="title-type-2 buzzword__title ">
           Buzzwords
         </h2>
         <div className="buzzword__tabs">
@@ -90,7 +90,7 @@ export function Buzzword() {
             <a
               href={link}
               key={description}
-              className={clsx('buzzword__tab-item text-type-2', {
+              className={clsx('title-type-2 buzzword__tab-item', {
                 'buzzword__tab-item--linked': link,
               })}
             >
