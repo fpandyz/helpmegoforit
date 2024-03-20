@@ -4,7 +4,7 @@ const CONDITIONS_CARDS = [
   {
     title: 'Расскажите о\xA0себе ',
     description: 'Мы ищем разработчиков, которым интересно узнать новые\xA0подходы в\xA0работе.',
-    link: 'link',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdVzFawz_-6L-ltYAMJVh3w9QsSIbSH1nddSbUjnHAfHp3cew/viewform',
     linkText: 'в\xA0гугл\xA0форме',
   },
   {
