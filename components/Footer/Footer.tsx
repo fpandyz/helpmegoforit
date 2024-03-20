@@ -36,7 +36,7 @@ export function Footer() {
               />
             </span>
           </a>
-          <a href="https://vk.com/tourmalinecore">
+          <a href="https://t.me/+70jzujiNgVxhMDRi">
             <span className="footer__icon">
               <Image
                 src={IconTg}

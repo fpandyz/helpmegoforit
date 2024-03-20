@@ -17,7 +17,7 @@ const SOCIAL_LINKS = [
     alt: 'VK',
   },
   {
-    link: 'https://vk.com/tourmalinecore',
+    link: 'https://t.me/+70jzujiNgVxhMDRi',
     iconSrc: IconTg,
     alt: 'Telegram',
   },
