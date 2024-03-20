@@ -4,14 +4,16 @@ import clsx from 'clsx';
 export function Card({
   description,
   icon,
+  className = '',
 }:{
   description: string;
   icon?: string;
+  className?: string;
 }) {
   return (
-    <div key={description} className="card">
+    <div key={description} className={`card ${className}`}>
       <span className={clsx('card__description text-type-3', {
-        'card__description--pd': icon,
+        'card__description--icon': icon,
       })}
       >
         {description}

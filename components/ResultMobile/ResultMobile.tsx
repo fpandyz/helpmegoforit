@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { Card } from '../Card/Card';
 import IconArrow from '../../public/images/arrow.svg';
 
-const resultMobileCards = [
+const RESULT_MOBILE_CARDS = [
   {
     description: 'Майндсет того, как именно работать вне\xA0зависимости от\xA0используемых инструментов',
   },
@@ -31,12 +31,12 @@ export function ResultMobile() {
   return (
     <section className="result-mobile">
       <div className="container result-mobile__wrapper">
-        <h2 className="result-mobile__title title-type-2">
+        <h2 className="title-type-2 result-mobile__title">
           Результат после курса
         </h2>
         <div className="result-mobile__inner">
           <div className="result-mobile__cards">
-            {resultMobileCards.map(({ description }) => (
+            {RESULT_MOBILE_CARDS.map(({ description }) => (
               <Card
                 key={description}
                 description={description}
@@ -47,7 +47,7 @@ export function ResultMobile() {
             <Image
               src={IconArrow}
               fill
-              alt="ResultMobileArrow"
+              alt="Стрелка, указывающая на следующий блок"
             />
           </span>
           <div
@@ -59,6 +59,7 @@ export function ResultMobile() {
               src="/video/puzzle.mp4"
               playsInline
               muted
+              preload="auto"
             />
           </div>
         </div>

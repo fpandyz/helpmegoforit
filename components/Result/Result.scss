@@ -1,6 +1,37 @@
 .result {
   display: none;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      bottom: -180px;
+      width: 574px;
+      height: 673px;
+      background: url("../../public/images/result-bg-small.png");
+    }
+
+    @include tablet-xl {
+      bottom: 235px;
+      width: 574px;
+      height: 673px;
+    }
+
+    @include desktop {
+      bottom: 135px;
+      width: 646px;
+      height: 910px;
+      background: url("../../public/images/result-bg-large.png");
+    }
+
+    @include desktop-xl {
+      bottom: -145px;
+    }
+  }
+
   &__wrapper {
     @include tablet {
       display: flex;
@@ -17,29 +48,31 @@
     @include tablet {
       margin-left: auto;
       width: calc(50% - 12px);
-
-      > *:not(:last-child) {
-        margin-bottom: 24px;
-      }
     }
 
     @include desktop-xl {
       width: calc(50% - 20px);
+    }
+  }
 
-      > *:not(:last-child) {
-        margin-bottom: 32px;
+  &__card {
+    @include tablet {
+      & + & {
+        margin-top: 24px;
+      }
+    }
+
+    @include desktop-xl {
+      & + & {
+        margin-top: 32px;
       }
     }
   }
 
   &__image {
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    position: relative;
 
     @include tablet {
-      position: relative;
       width: 340px;
       height: 284px;
     }
@@ -57,37 +90,6 @@
     @include desktop-xl {
       height: 646px;
       min-width: 712px;
-    }
-  }
-
-  &__background {
-    img {
-      width: 100%;
-      height: 100%;
-    }
-
-    @include tablet {
-      position: absolute;
-      right: 0;
-      bottom: -245px;
-      width: 550px;
-      height: 775px;
-    }
-
-    @include tablet-xl {
-      bottom: 235px;
-      width: 574px;
-      height: 673px;
-    }
-
-    @include desktop {
-      bottom: 135px;
-      width: 646px;
-      height: 910px;
-    }
-
-    @include desktop-xl {
-      bottom: -145px;
     }
   }
 

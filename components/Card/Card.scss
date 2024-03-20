@@ -11,7 +11,7 @@
     font-weight: 400;
     color: $color-white-80;
 
-    &--pd {
+    &--icon {
       padding-right: 87px;
 
       @include tablet-xl {
@@ -33,8 +33,6 @@
     height: 100%;
 
     img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
     }
 
