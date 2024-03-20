@@ -4,6 +4,40 @@
   padding-top: 72px;
   padding-bottom: 104px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    z-index: -1;
+    width: 100%;
+    height: 311px;
+    background-image: url("../../public/images/conditions-bg-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      bottom: -126px;
+      height: 515px;
+      background-image: url("../../public/images/conditions-bg-small.png");
+    }
+
+    @include tablet-xl {
+      bottom: -120px;
+      height: 687px;
+    }
+
+    @include desktop {
+      bottom: -130px;
+      height: 917px;
+      background-image: url("../../public/images/conditions-bg-large.png");
+    }
+
+    @include desktop-xl {
+      bottom: -175px;
+      height: 1289px;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -41,39 +75,6 @@
 
     @include desktop-xl {
       gap: 32px;
-    }
-  }
-
-  &__background {
-    position: absolute;
-    bottom: -120px;
-    z-index: -1;
-    width: 375px;
-    height: 311px;
-    pointer-events: none;
-
-    @include tablet {
-      bottom: -126px;
-      width: 768px;
-      height: 515px;
-    }
-
-    @include tablet-xl {
-      bottom: -120px;
-      width: 1024px;
-      height: 687px;
-    }
-
-    @include desktop {
-      bottom: -130px;
-      width: 1366px;
-      height: 917px;
-    }
-
-    @include desktop-xl {
-      bottom: -175px;
-      width: 1920px;
-      height: 1289px;
     }
   }
 

@@ -52,18 +52,6 @@ export function Conditions() {
           ))}
         </div>
       </div>
-
-      <picture className="conditions__background">
-        <source
-          srcSet="images/conditions-bg-large.png"
-          media="(min-width: 1366px)"
-        />
-        <source
-          srcSet="images/conditions-bg-small.png"
-          media="(min-width: 768px)"
-        />
-        <img srcSet="images/conditions-bg-mobile.png" alt="conditionsBackground" />
-      </picture>
     </section>
   );
 }
