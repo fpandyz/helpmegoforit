@@ -40,7 +40,7 @@
     }
 
     &--github {
-      justify-content: end;
+      justify-content: flex-end;
     }
 
     @include tablet {

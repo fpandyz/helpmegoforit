@@ -89,6 +89,7 @@ export function Buzzword() {
           {BUZZWORDS_CARDS.map(({ description, link }) => (
             <a
               href={link}
+              target="_blank"
               key={description}
               className={clsx('text-type-2 buzzword__tab-item', {
                 'buzzword__tab-item--linked': link,
