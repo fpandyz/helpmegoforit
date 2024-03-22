@@ -41,7 +41,7 @@ export function Card({
         <span className="card__icon">
           <Image
             src={icon}
-            alt="cardIcon"
+            alt="Илюстрация карточки"
             fill
           />
         </span>

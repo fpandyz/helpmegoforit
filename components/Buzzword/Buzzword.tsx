@@ -79,7 +79,7 @@ export function Buzzword() {
           srcSet="images/buzzword-image-small.png"
           media="(min-width: 768px)"
         />
-        <img srcSet="images/buzzword-image-mobile.png" alt="После курса в резюме добавится" />
+        <img srcSet="images/buzzword-image-mobile.png" alt="Технологии, которые вы изучите" />
       </picture>
       <div className="container buzzword__wrapper">
         <h2 className="title-type-2 buzzword__title ">

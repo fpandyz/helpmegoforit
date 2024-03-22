@@ -1,5 +1,6 @@
 import { FooterMobile } from '@/components/FooterMobile/FooterMobile';
 import { Buzzword } from '@/components/Buzzword/Buzzword';
+import Cookie from '@/components/Cookie/Cookie';
 import { Conditions } from '../components/Conditions/Conditions';
 import { Footer } from '../components/Footer/Footer';
 import { ResultMobile } from '../components/ResultMobile/ResultMobile';
@@ -12,6 +13,7 @@ import { About } from '../components/About/About';
 export default function HomePage() {
   return (
     <Layout>
+      <Cookie />
       <Hero />
       <About />
       <Learn />
