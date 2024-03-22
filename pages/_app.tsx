@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app';
 import { Montserrat } from 'next/font/google';
 import { useEffect } from 'react';
 import router from 'next/router';
-import Cookie from '../components/Cookie/Cookie';
 
 const montserrat = Montserrat({
   weight: ['400', '500', '700'],
