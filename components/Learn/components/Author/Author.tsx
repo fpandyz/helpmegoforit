@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import AuthorImage from '../../../../public/images/author.svg';
+import AuthorImage from '../../../../public/images/author.png';
 
 const LINK = 'https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D1%82%D1%87%D0%B5%D1%82%D1%82,_%D0%A2%D0%B5%D1%80%D1%80%D0%B8';
 
@@ -21,6 +21,7 @@ export function Author() {
           <Image
             src={AuthorImage}
             alt="Автор"
+            loading="eager"
           />
         </span>
         <div className="author__wrapper">
