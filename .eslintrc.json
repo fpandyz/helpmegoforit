@@ -1,7 +1,8 @@
 {
   "ignorePatterns": [
       "sw-*.js",
-      "next.*"
+      "next.*",
+      "postcss.config.js"
     ],
   "env": {
     "browser": true,
