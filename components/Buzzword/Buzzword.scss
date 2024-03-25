@@ -35,11 +35,9 @@
     &--linked {
       display: flex;
       align-items: center;
+      color: transparent;
       background: $color-gradient;
-      -webkit-background-clip: text;
-              background-clip: text;
       pointer-events: auto;
-      -webkit-text-fill-color: transparent;
 
       @include desktop {
         position: relative;
@@ -78,6 +76,12 @@
           -webkit-mask: none;
                   mask: none;
         }
+      }
+
+      @supports (-webkit-background-clip: text) {
+        -webkit-background-clip: text;
+                background-clip: text;
+        background-color: transparent;
       }
     }
 
