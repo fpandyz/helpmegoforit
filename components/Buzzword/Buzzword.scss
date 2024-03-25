@@ -79,6 +79,7 @@
       }
 
       @supports (-webkit-background-clip: text) {
+        columns: $color-gradient;
         -webkit-background-clip: text;
                 background-clip: text;
         background-color: transparent;
