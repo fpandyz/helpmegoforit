@@ -13,7 +13,9 @@ export default function Document() {
 
   return (
     <Html lang="ru">
-      <Head><meta name="yandex-verification" content="d7c2b9f9a4891879" /></Head>
+      <Head>
+        <meta name="yandex-verification" content="d7c2b9f9a4891879" />
+      </Head>
       <title>Курсы фронтенд разработчика бесплатно с нуля</title>
       <meta name="description" content="Обучение фронтенд разработчике бесплатно! Курсы для тех, кто начинает с нуля или хочет улучшить свой код. Научитесь разворачивать фронтенд в облаке, тестировать, делать фронтенд независимый от бекенда." />
       <body>
@@ -52,7 +54,6 @@ export default function Document() {
           </div>
         </noscript>
         {' '}
-
       </body>
     </Html>
   );
