@@ -1,6 +1,6 @@
 import { FooterMobile } from '@/components/FooterMobile/FooterMobile';
 import { Buzzword } from '@/components/Buzzword/Buzzword';
-import Cookie from '@/components/Cookie/Cookie';
+import { Cookie } from '@/components/Cookie/Cookie';
 import { Conditions } from '../components/Conditions/Conditions';
 import { Footer } from '../components/Footer/Footer';
 import { ResultMobile } from '../components/ResultMobile/ResultMobile';

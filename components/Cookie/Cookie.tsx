@@ -4,7 +4,6 @@
 
 import { useState, useEffect } from 'react';
 import { getCookie, setCookie } from 'cookies-next';
-
 import { OptionYM } from '../../types/globals';
 
 const cookieAccept = 'cookieAccept';
@@ -16,7 +15,7 @@ export const optionYandexMetrika: OptionYM = {
   webvisor: true,
 };
 
-function Cookie() {
+export function Cookie() {
   const [isCookie, setIsCookie] = useState(true);
   const [date, setDate] = useState<Date>();
 
@@ -95,5 +94,3 @@ function Cookie() {
     setIsCookie(true);
   }
 }
-
-export default Cookie;
