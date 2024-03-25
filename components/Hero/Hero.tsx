@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import Image from 'next/image';
 import IconArrow from '../../public/images/arrow.svg';
 

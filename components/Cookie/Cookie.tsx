@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -17,13 +15,11 @@ export const optionYandexMetrika: OptionYM = {
 
 export function Cookie() {
   const [isCookie, setIsCookie] = useState(true);
-  const [date, setDate] = useState<Date>();
+  const date = new Date();
 
   const isMetricsEnabled = process.env.METRICS_ENABLED === 'true';
 
   useEffect(() => {
-    setDate(new Date());
-
     if (typeof getCookie(cookieAccept) === 'string') {
       setIsCookie(true);
     } else {
@@ -52,14 +48,15 @@ export function Cookie() {
                 cookie
               </a>
               {' '}
-              для&nbsp;аналитики и&nbsp;маркетинга, чтобы&nbsp;вам было удобно пользоваться нашим веб-сайтом.
+              для&nbsp;аналитики и&nbsp;маркетинга,
+              чтобы&nbsp;вам было удобно пользоваться нашим веб-сайтом.
             </div>
 
             <div className="cookie__buttons">
               <button
                 type="button"
                 className="text-type-2 cookie__accept"
-                onClick={() => acceptCookie()}
+                onClick={acceptCookie}
               >
                 Хорошо
               </button>
