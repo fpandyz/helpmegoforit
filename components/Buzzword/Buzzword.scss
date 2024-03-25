@@ -37,6 +37,8 @@
       align-items: center;
       color: transparent;
       background: $color-gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
       pointer-events: auto;
 
       @include desktop {
@@ -69,20 +71,13 @@
         }
 
         &:hover {
-          -webkit-text-fill-color: $color-white-80;
+          color: $color-white-80;
         }
 
         &:hover::before {
           -webkit-mask: none;
                   mask: none;
         }
-      }
-
-      @supports (-webkit-background-clip: text) {
-        color: $color-gradient;
-        -webkit-background-clip: text;
-                background-clip: text;
-        background-color: transparent;
       }
     }
 
