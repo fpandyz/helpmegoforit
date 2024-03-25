@@ -12,7 +12,7 @@ export function Card({
   title?: string;
   link?: string;
   linkText?: string;
-  description: string;
+  description: any;
   icon?: string;
   className?: string;
 }) {
