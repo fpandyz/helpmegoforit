@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -39,7 +41,7 @@ function Cookie() {
       {!isCookie ? (
         <div className="cookie">
           <div className="cookie__inner">
-            <div className="cookie__text">
+            <div className="text-type-2 cookie__text">
               Мы используем файлы
               {' '}
               <a
@@ -51,24 +53,26 @@ function Cookie() {
                 cookie
               </a>
               {' '}
-              для аналитики и маркетинга, чтобы вам было удобно пользоваться нашим веб-сайтом.
+              для&nbsp;аналитики и&nbsp;маркетинга, чтобы&nbsp;вам было удобно пользоваться нашим веб-сайтом.
             </div>
 
-            <button
-              type="button"
-              className="cookie__accept"
-              onClick={() => acceptCookie()}
-            >
-              Хорошо
-            </button>
+            <div className="cookie__buttons">
+              <button
+                type="button"
+                className="text-type-2 cookie__accept"
+                onClick={() => acceptCookie()}
+              >
+                Хорошо
+              </button>
 
-            <button
-              type="button"
-              className="cookie__reject"
-              onClick={rejectCookie}
-            >
-              Отказаться
-            </button>
+              <button
+                type="button"
+                className="text-type-2 cookie__reject"
+                onClick={rejectCookie}
+              >
+                Отказаться
+              </button>
+            </div>
           </div>
         </div>
       ) : <div />}
