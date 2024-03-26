@@ -9,7 +9,7 @@ export function Hero() {
           srcSet="images/hero-bg-desktop.gif"
           media="(min-width: 1024px)"
         />
-        <img srcSet="images/hero-bg-mobile.gif" alt="heroBackground" />
+        <img srcSet="images/hero-bg-mobile.gif" alt="Динамический фон" />
       </picture>
       <div className="container hero__wrapper">
         <div className="hero__inner">
@@ -27,19 +27,14 @@ export function Hero() {
             Architecture
           </h1>
           <h2 className="hero__subtitle text-type-2">
-            Building Modern Mindset
-            {' '}
-            <br className="hero__indent" />
-            <span className="hero__subtitle--pink">for Junior</span>
-            {' '}
-            Frontend Developers
+            Тестируем материалы курса. Собираем фидбек.
           </h2>
         </div>
         <span className="hero__arrow">
           <Image
             src={IconArrow}
             fill
-            alt="heroArrow"
+            alt="Стрелка, указывающая на следующий блок"
           />
         </span>
       </div>

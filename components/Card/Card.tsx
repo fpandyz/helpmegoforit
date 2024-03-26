@@ -12,7 +12,7 @@ export function Card({
   title?: string;
   link?: string;
   linkText?: string;
-  description: string;
+  description: any;
   icon?: string;
   className?: string;
 }) {
@@ -41,7 +41,7 @@ export function Card({
         <span className="card__icon">
           <Image
             src={icon}
-            alt="cardIcon"
+            alt="Иллюстрация карточки"
             fill
           />
         </span>

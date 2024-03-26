@@ -113,16 +113,6 @@
   &__subtitle {
     text-align: center;
     color: $color-white-80;
-
-    &--pink {
-      color: $color-pink;
-    }
-  }
-
-  &__indent {
-    @include tablet {
-      display: none;
-    }
   }
 
   &__arrow {
