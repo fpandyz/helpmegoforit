@@ -33,13 +33,13 @@
     pointer-events: none;
 
     &--linked {
-      display: flex;
-      align-items: center;
-      color: transparent;
       background: $color-gradient;
       -webkit-background-clip: text;
       background-clip: text;
       pointer-events: auto;
+      -webkit-text-fill-color: transparent;
+      /* stylelint-disable-next-line property-no-unknown */
+      text-fill-color: transparent;
 
       @include desktop {
         position: relative;
@@ -71,7 +71,7 @@
         }
 
         &:hover {
-          color: $color-white-80;
+          -webkit-text-fill-color: $color-white-80;
         }
 
         &:hover::before {
@@ -90,7 +90,6 @@
     }
 
     @include desktop-xl {
-      border-width: 2px;
       padding: 16px 32px;
     }
   }
