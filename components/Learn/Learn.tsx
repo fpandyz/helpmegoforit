@@ -1,3 +1,4 @@
+import React from 'react';
 import IconTraces from '../../public/images/learn-traces.svg';
 import IconHeart from '../../public/images/learn-heart.svg';
 import IconBox from '../../public/images/learn-box.svg';
@@ -8,23 +9,23 @@ import { Card } from '../Card/Card';
 
 const LEARN_CARDS = [
   {
-    description: 'Решать сложные задачи простыми шагами',
+    description: ['Решать сложные задачи простыми шагами'],
     icon: IconTraces,
   },
   {
-    description: 'Делать независимый от\xA0бекенда фронтенд',
+    description: ['Делать независимый от\xA0бекенда фронтенд'],
     icon: IconHeart,
   },
   {
-    description: 'Разворачивать фронтенд в\xA0облаке',
+    description: ['Разворачивать', 'фронтенд в облаке'],
     icon: IconBox,
   },
   {
-    description: 'Тестировать свой код',
+    description: ['Тестировать свой код'],
     icon: IconHand,
   },
   {
-    description: 'Делать лучше',
+    description: ['Делать лучше'],
     icon: IconQuestions,
   },
 ];
@@ -46,8 +47,13 @@ export function Learn() {
             },
           ) => (
             <Card
-              key={description}
-              description={description}
+              key={icon}
+              description={description.map((line) => (
+                <React.Fragment key={line}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
               icon={icon}
             />
           ))}
