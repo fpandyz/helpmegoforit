@@ -90,6 +90,7 @@
     }
 
     @include desktop-xl {
+      border-width: 2px;
       padding: 16px 32px;
     }
   }
