@@ -15,10 +15,10 @@ export function Hero() {
         <div className="hero__inner">
           <picture className="hero__image">
             <source
-              srcSet="images/hero-image.png"
+              srcSet="images/hero-image.webp"
               media="(min-width: 768px)"
             />
-            <img srcSet="images/hero-image-mobile.png" alt="Aнонс курса" />
+            <img srcSet="images/hero-image-mobile.webp" alt="heroImage" />
           </picture>
           <h1 className="hero__title">
             Fron

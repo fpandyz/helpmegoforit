@@ -22,6 +22,7 @@
     height: 48px;
 
     @include desktop {
+      width: 66px;
       height: 66px;
     }
   }
