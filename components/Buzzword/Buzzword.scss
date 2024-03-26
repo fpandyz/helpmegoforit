@@ -38,8 +38,6 @@
       background-clip: text;
       pointer-events: auto;
       -webkit-text-fill-color: transparent;
-      /* stylelint-disable-next-line property-no-unknown */
-      text-fill-color: transparent;
 
       @include desktop {
         position: relative;
