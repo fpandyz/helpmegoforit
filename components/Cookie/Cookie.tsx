@@ -17,8 +17,7 @@ export function Cookie() {
   const [isCookie, setIsCookie] = useState(true);
   const date = new Date();
 
-  const isMetricsEnabled = true;
-  // const isMetricsEnabled = process.env.METRICS_ENABLED === 'true';
+  const isMetricsEnabled = process.env.NODE_ENV === 'production';
 
   useEffect(() => {
     if (typeof getCookie(cookieAccept) === 'string') {

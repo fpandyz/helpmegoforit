@@ -8,8 +8,7 @@ const montserrat = Montserrat({
   weight: ['400', '500', '700'],
   subsets: ['latin', 'cyrillic'],
 });
-const isMetricsEnabled = true;
-// const isMetricsEnabled = process.env.METRICS_ENABLED === 'true';
+const isMetricsEnabled = process.env.NODE_ENV === 'production';
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {

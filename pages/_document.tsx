@@ -9,8 +9,7 @@ import {
 import Script from 'next/script';
 
 export default function Document() {
-  // const isMetricsEnabled = process.env.METRICS_ENABLED === 'true';
-  const isMetricsEnabled = true;
+  const isMetricsEnabled = process.env.NODE_ENV === 'production';
 
   return (
     <Html lang="ru">
@@ -22,8 +21,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        {process.env.HOST
-        && !process.env.HOST.includes('localhost')
+        {isMetricsEnabled
         && (
           <Script id="metrika-counter" strategy="afterInteractive">
             {`
@@ -37,7 +35,7 @@ export default function Document() {
 
               var isCookieAccept = document.cookie.includes('cookieAccept=true');
 
-              if (${isMetricsEnabled} && isCookieAccept) {
+              if (isCookieAccept) {
                 ym(96806068, "init", ${JSON.stringify(optionYandexMetrika)})
               }
             `}
