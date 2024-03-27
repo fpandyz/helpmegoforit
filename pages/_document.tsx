@@ -21,7 +21,8 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        {process.env.HOST !== 'localhost:3000'
+        {process.env.HOST
+        && !process.env.HOST.includes('localhost')
         && (
           <Script type="text/javascript">
             {`
