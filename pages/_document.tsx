@@ -9,7 +9,8 @@ import {
 import Script from 'next/script';
 
 export default function Document() {
-  const isMetricsEnabled = process.env.METRICS_ENABLED === 'true';
+  // const isMetricsEnabled = process.env.METRICS_ENABLED === 'true';
+  const isMetricsEnabled = true;
 
   return (
     <Html lang="ru">
@@ -24,9 +25,9 @@ export default function Document() {
         {process.env.HOST
         && !process.env.HOST.includes('localhost')
         && (
-          <Script type="text/javascript">
+          <Script id="metrika-counter" strategy="afterInteractive">
             {`
-          function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
           m[i].l=1*new Date();
            for (var j = 0; j < document.scripts.length; j++) 
            {if (document.scripts[j].src === r) { return; }}
