@@ -11,7 +11,7 @@
       bottom: -180px;
       width: 574px;
       height: 673px;
-      background: url("../../public/images/result-bg-small.png");
+      background: url("../../public/images/result-bg-small.webp");
     }
 
     @include tablet-xl {
@@ -24,7 +24,7 @@
       bottom: 135px;
       width: 646px;
       height: 910px;
-      background: url("../../public/images/result-bg-large.png");
+      background: url("../../public/images/result-bg-large.webp");
     }
 
     @include desktop-xl {

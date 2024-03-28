@@ -5,36 +5,24 @@ export function Hero() {
   return (
     <section className="hero">
 
-      <div className="hero__div">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="hero__video"
-        >
-          <source
-            src="images/hero-bg-desktop.webm"
-            type="video/webm"
-            media="(min-width: 1024px)"
-          />
-          <source
-            src="images/hero-bg-mobile.mp4"
-            type="video/mp4"
-            media="(max-width: 1023px)"
-          />
-          <picture>
-            <source
-              media="(min-width: 1024px)"
-              srcSet="images/hero-poster-desktop.webp"
-            />
-            <img
-              src="images/hero-poster-mobile.webp"
-              alt="Mobile poster"
-            />
-          </picture>
-        </video>
-      </div>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hero__video hero__video--mobile"
+        poster="images/hero-poster-mobile.webp"
+        src="video/hero-bg-mobile.mp4"
+      />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hero__video hero__video--desktop"
+        poster="images/hero-poster-desktop.webp"
+        src="video/hero-bg-desktop.webm"
+      />
 
       <div className="container hero__wrapper">
         <div className="hero__inner">
