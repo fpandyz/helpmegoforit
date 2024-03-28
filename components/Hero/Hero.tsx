@@ -4,13 +4,38 @@ import IconArrow from '../../public/images/arrow.svg';
 export function Hero() {
   return (
     <section className="hero">
-      <picture className="hero__background">
-        <source
-          srcSet="images/hero-bg-desktop.gif"
-          media="(min-width: 1024px)"
-        />
-        <img srcSet="images/hero-bg-mobile.gif" alt="Динамический фон" />
-      </picture>
+
+      <div className="hero__div">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero__video"
+        >
+          <source
+            src="images/hero-bg-desktop.webm"
+            type="video/webm"
+            media="(min-width: 1024px)"
+          />
+          <source
+            src="images/hero-bg-mobile.mp4"
+            type="video/mp4"
+            media="(max-width: 1023px)"
+          />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcSet="images/hero-poster-desktop.png"
+            />
+            <img
+              src="images/hero-poster-mobile.png"
+              alt="Mobile poster"
+            />
+          </picture>
+        </video>
+      </div>
+
       <div className="container hero__wrapper">
         <div className="hero__inner">
           <picture className="hero__image">
