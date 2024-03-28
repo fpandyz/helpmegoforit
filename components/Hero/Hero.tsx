@@ -26,10 +26,10 @@ export function Hero() {
           <picture>
             <source
               media="(min-width: 1024px)"
-              srcSet="images/hero-poster-desktop.png"
+              srcSet="images/hero-poster-desktop.webp"
             />
             <img
-              src="images/hero-poster-mobile.png"
+              src="images/hero-poster-mobile.webp"
               alt="Mobile poster"
             />
           </picture>
