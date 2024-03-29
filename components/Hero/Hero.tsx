@@ -10,6 +10,7 @@ export function Hero() {
         loop
         muted
         playsInline
+        preload="auto"
         className="hero__video hero__video--mobile"
         poster="images/hero-poster-mobile.webp"
         src="video/hero-bg-mobile.mp4"
@@ -19,6 +20,7 @@ export function Hero() {
         loop
         muted
         playsInline
+        preload="auto"
         className="hero__video hero__video--desktop"
         poster="images/hero-poster-desktop.webp"
         src="video/hero-bg-desktop.mp4"
