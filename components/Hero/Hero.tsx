@@ -21,7 +21,7 @@ export function Hero() {
         playsInline
         className="hero__video hero__video--desktop"
         poster="images/hero-poster-desktop.webp"
-        src="video/hero-bg-desktop.webm"
+        src="video/hero-bg-desktop.mp4"
       />
 
       <div className="container hero__wrapper">
