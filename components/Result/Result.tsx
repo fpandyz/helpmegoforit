@@ -15,7 +15,7 @@ export function Result() {
       <div className="container result__wrapper">
         <picture className="result__image">
           <source
-            srcSet="images/result-image-large.webp"
+            srcSet="images/result-image-large.png"
             media="(min-width: 1366px)"
           />
           <img srcSet="images/result-image-small.png" alt="Результат после курса" />
