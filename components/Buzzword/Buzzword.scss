@@ -102,33 +102,34 @@
   }
 
   &__image {
-    position: absolute;
-    right: 16px;
-    top: 39px;
+    position: relative;
+    right: -59px;
+    top: 35px;
     display: block;
+    margin: 0 auto;
     width: 224px;
     height: 156px;
 
     @include tablet {
-      right: 32px;
-      top: 146px;
+      right: -240px;
+      top: 44px;
     }
 
     @include tablet-xl {
-      right: 64px;
-      top: 134px;
+      right: -335px;
+      top: 50px;
     }
 
     @include desktop {
-      right: 74px;
-      top: 78px;
+      right: -465px;
+      top: 45px;
       width: 288px;
       height: 222px;
     }
 
     @include desktop-xl {
-      right: 395px;
-      top: 109px;
+      right: -345px;
+      top: 26px;
       width: 436px;
       height: 298px;
     }

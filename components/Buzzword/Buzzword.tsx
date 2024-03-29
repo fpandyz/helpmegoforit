@@ -70,18 +70,18 @@ const BUZZWORDS_CARDS = [
 export function Buzzword() {
   return (
     <section className="buzzword">
-      <picture className="buzzword__image">
-        <source
-          srcSet="images/buzzword-image-large.webp"
-          media="(min-width: 1366px)"
-        />
-        <source
-          srcSet="images/buzzword-image-small.webp"
-          media="(min-width: 768px)"
-        />
-        <img srcSet="images/buzzword-image-mobile.webp" alt="После курса в резюме добавится" />
-      </picture>
       <div className="container buzzword__wrapper">
+        <picture className="buzzword__image">
+          <source
+            srcSet="images/buzzword-image-large.webp"
+            media="(min-width: 1366px)"
+          />
+          <source
+            srcSet="images/buzzword-image-small.webp"
+            media="(min-width: 768px)"
+          />
+          <img srcSet="images/buzzword-image-mobile.webp" alt="После курса в резюме добавится" />
+        </picture>
         <h2 className="title-type-2 buzzword__title ">
           Buzzwords
         </h2>
