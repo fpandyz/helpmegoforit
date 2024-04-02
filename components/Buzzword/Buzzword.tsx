@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+import Image from 'next/image';
+import BuzzwordImageSrc from '../../public/images/buzzword-image-mobile.webp';
 
 const BUZZWORDS_CARDS = [
   {
@@ -80,7 +82,7 @@ export function Buzzword() {
             srcSet="images/buzzword-image-small.webp"
             media="(min-width: 768px)"
           />
-          <img srcSet="images/buzzword-image-mobile.webp" alt="После курса в резюме добавится" />
+          <Image src={BuzzwordImageSrc} alt="После курса в резюме добавится" />
         </picture>
         <h2 className="title-type-2 buzzword__title ">
           Buzzwords

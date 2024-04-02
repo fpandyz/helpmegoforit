@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import IconArrow from '../../public/images/arrow.svg';
+import HeroImageSrc from '../../public/images/hero-image-mobile.webp';
 
 export function Hero() {
   return (
@@ -33,7 +34,7 @@ export function Hero() {
               srcSet="images/hero-image.webp"
               media="(min-width: 768px)"
             />
-            <img srcSet="images/hero-image-mobile.webp" alt="heroImage" />
+            <Image src={HeroImageSrc} alt="heroImage" />
           </picture>
           <h1 className="hero__title">
             Fron
