@@ -19,36 +19,50 @@
   }
 
   &__image {
+    position: relative;
     display: block;
     margin: 0 auto;
     width: 147px;
     height: 59px;
 
+    &--mobile {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+
     @include tablet {
-      position: absolute;
-      right: -127px;
-      top: -107px;
+      right: -258px;
+      top: 14px;
       width: 189px;
       height: 119px;
     }
 
     @include tablet-xl {
-      right: -159px;
-      top: -99px;
+      right: -316px;
+      top: 8px;
       width: 163px;
       height: 103px;
     }
 
     @include desktop {
-      right: -132px;
-      top: -97px;
+      right: -308px;
+      top: 20px;
       width: 182px;
       height: 115px;
     }
 
     @include desktop-xl {
-      right: -245px;
-      top: -205px;
+      right: -424px;
+      top: 12px;
       width: 340px;
       height: 212px;
     }
@@ -97,8 +111,25 @@
   }
 
   &__subtitle {
+    height: 59px;
     text-align: center;
     color: $color-white-80;
+
+    @include tablet {
+      height: 119px;
+    }
+
+    @include tablet-xl {
+      height: 103px;
+    }
+
+    @include desktop {
+      height: 115px;
+    }
+
+    @include desktop-xl {
+      height: 212px;
+    }
   }
 
   &__arrow {
@@ -122,8 +153,6 @@
     object-fit: cover;
 
     &--mobile {
-      display: block;
-
       @include tablet-xl {
         display: none;
       }
