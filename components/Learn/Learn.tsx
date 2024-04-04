@@ -1,9 +1,9 @@
 import React from 'react';
-import IconTraces from '../../public/images/learn-traces.svg';
-import IconHeart from '../../public/images/learn-heart.svg';
-import IconBox from '../../public/images/learn-box.svg';
-import IconHand from '../../public/images/learn-hand.svg';
-import IconQuestions from '../../public/images/learn-question.svg';
+import IconTraces from '../../public/images/learn-traces.webp';
+import IconHeart from '../../public/images/learn-heart.webp';
+import IconBox from '../../public/images/learn-box.webp';
+import IconHand from '../../public/images/learn-hand.webp';
+import IconQuestions from '../../public/images/learn-question.webp';
 import { Author } from './components/Author/Author';
 import { Card } from '../Card/Card';
 

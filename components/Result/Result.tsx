@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card } from '../Card/Card';
-import ResultImageSmallSrc from '../../public/images/result-image-small.png';
-import ResultImageLargeSrc from '../../public/images/result-image-large.png';
+import ResultImageSmallSrc from '../../public/images/result-image-small.webp';
+import ResultImageLargeSrc from '../../public/images/result-image-large.webp';
 
 const RESULT_CARDS = [
   {

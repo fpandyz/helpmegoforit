@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import IconArrow from '../../public/images/arrow.svg';
+import IconArrow from '../../public/images/arrow.webp';
 import HeroImageMobileSrc from '../../public/images/hero-image-mobile.webp';
 import HeroImageSrc from '../../public/images/hero-image.webp';
 
