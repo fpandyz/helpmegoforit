@@ -1,32 +1,27 @@
 import React from 'react';
-import IconTraces from '../../public/images/learn-traces.webp';
-import IconHeart from '../../public/images/learn-heart.webp';
-import IconBox from '../../public/images/learn-box.webp';
-import IconHand from '../../public/images/learn-hand.webp';
-import IconQuestions from '../../public/images/learn-question.webp';
 import { Author } from './components/Author/Author';
 import { Card } from '../Card/Card';
 
 const LEARN_CARDS = [
   {
     description: ['Решать сложные задачи простыми шагами'],
-    icon: IconTraces,
+    icon: '/images/learn-traces.webp',
   },
   {
     description: ['Делать независимый от\xA0бекенда фронтенд'],
-    icon: IconHeart,
+    icon: '/images/learn-heart.webp',
   },
   {
     description: ['Разворачивать', 'фронтенд в облаке'],
-    icon: IconBox,
+    icon: '/images/learn-box.webp',
   },
   {
     description: ['Тестировать свой код'],
-    icon: IconHand,
+    icon: '/images/learn-hand.webp',
   },
   {
     description: ['Делать лучше'],
-    icon: IconQuestions,
+    icon: '/images/learn-question.webp',
   },
 ];
 
