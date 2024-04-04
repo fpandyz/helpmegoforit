@@ -72,6 +72,20 @@
   &__image {
     position: relative;
 
+    &--small {
+      @include desktop {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
     @include tablet {
       width: 340px;
       height: 284px;

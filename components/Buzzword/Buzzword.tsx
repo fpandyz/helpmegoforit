@@ -1,4 +1,8 @@
 import clsx from 'clsx';
+import Image from 'next/image';
+import BuzzwordImageMobileSrc from '../../public/images/buzzword-image-mobile.webp';
+import BuzzwordImageSmallSrc from '../../public/images/buzzword-image-small.webp';
+import BuzzwordImageLargeSrc from '../../public/images/buzzword-image-large.webp';
 
 const BUZZWORDS_CARDS = [
   {
@@ -71,17 +75,26 @@ export function Buzzword() {
   return (
     <section className="buzzword">
       <div className="container buzzword__wrapper">
-        <picture className="buzzword__image">
-          <source
-            srcSet="images/buzzword-image-large.webp"
-            media="(min-width: 1366px)"
-          />
-          <source
-            srcSet="images/buzzword-image-small.webp"
-            media="(min-width: 768px)"
-          />
-          <img srcSet="images/buzzword-image-mobile.webp" alt="После курса в резюме добавится" />
-        </picture>
+
+        <Image
+          src={BuzzwordImageMobileSrc}
+          className="buzzword__image buzzword__image--mobile"
+          id="image-mobile"
+          alt="После курса в резюме добавится"
+        />
+        <Image
+          src={BuzzwordImageSmallSrc}
+          className="buzzword__image buzzword__image--small"
+          id="image-small"
+          alt="После курса в резюме добавится"
+        />
+        <Image
+          src={BuzzwordImageLargeSrc}
+          className="buzzword__image buzzword__image--large"
+          id="image-large"
+          alt="После курса в резюме добавится"
+        />
+
         <h2 className="title-type-2 buzzword__title ">
           Buzzwords
         </h2>

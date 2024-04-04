@@ -110,6 +110,32 @@
     width: 224px;
     height: 156px;
 
+    &--mobile {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--small {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    &--large {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
     @include tablet {
       right: -240px;
       top: 44px;

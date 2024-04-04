@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import { Card } from '../Card/Card';
+import ResultImageSmallSrc from '../../public/images/result-image-small.png';
+import ResultImageLargeSrc from '../../public/images/result-image-large.png';
 
 const RESULT_CARDS = [
   {
@@ -13,13 +16,17 @@ export function Result() {
   return (
     <section className="result">
       <div className="container result__wrapper">
-        <picture className="result__image">
-          <source
-            srcSet="images/result-image-large.png"
-            media="(min-width: 1366px)"
-          />
-          <img srcSet="images/result-image-small.png" alt="Результат после курса" />
-        </picture>
+        <Image
+          src={ResultImageSmallSrc}
+          className="result__image result__image--small"
+          alt="Результат после курса"
+        />
+        <Image
+          src={ResultImageLargeSrc}
+          className="result__image result__image--desktop"
+          alt="Результат после курса"
+        />
+
         <div className="result__cards">
           {RESULT_CARDS.map(({ description }) => (
             <Card
