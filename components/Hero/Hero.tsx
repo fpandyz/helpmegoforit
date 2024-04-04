@@ -11,23 +11,21 @@ export function Hero() {
         loop
         muted
         playsInline
+        poster="images/hero-poster-mobile.webp"
+        src="video/hero-bg-mobile.mp4"
         preload="auto"
         className="hero__video hero__video--mobile"
-      >
-        <source media="(max-width: 1023px)" src="video/hero-bg-mobile.mp4" type="video/mp4" />
-        <source media="(max-width: 1023px)" src="images/hero-poster-mobile.webp" type="image/webp" />
-      </video>
+      />
       <video
         autoPlay
         loop
         muted
         playsInline
+        poster="images/hero-poster-desktop.webp"
+        src="video/hero-bg-desktop.mp4"
         preload="auto"
         className="hero__video hero__video--desktop"
-      >
-        <source media="(min-width: 1024px)" src="video/hero-bg-desktop.mp4" type="video/mp4" />
-        <source media="(min-width: 1024px)" src="images/hero-poster-desktop.webp" type="image/webp" />
-      </video>
+      />
 
       <div className="container hero__wrapper">
         <Image

@@ -47,7 +47,7 @@ export function Learn() {
             },
           ) => (
             <Card
-              key={icon}
+              key={description[0]}
               description={description.map((line) => (
                 <React.Fragment key={line}>
                   {line}

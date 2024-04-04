@@ -15,10 +15,20 @@ export default function Document() {
     <Html lang="ru">
       <Head>
         <meta name="yandex-verification" content="d7c2b9f9a4891879" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ef0c85" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+
         <link rel="preconnect" href="https://mc.yandex.ru" />
+
+        <title>Курсы фронтенд разработчика бесплатно с нуля</title>
+        <meta name="description" content="Обучение фронтенд разработке бесплатно! Курсы для тех, кто начинает с нуля или хочет улучшить свой код. Научитесь разворачивать фронтенд в облаке, тестировать, делать фронтенд независимый от бекенда." />
       </Head>
-      <title>Курсы фронтенд разработчика бесплатно с нуля</title>
-      <meta name="description" content="Обучение фронтенд разработке бесплатно! Курсы для тех, кто начинает с нуля или хочет улучшить свой код. Научитесь разворачивать фронтенд в облаке, тестировать, делать фронтенд независимый от бекенда." />
       <body>
         <Main />
         <NextScript />
