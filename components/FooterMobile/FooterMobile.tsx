@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import IconGit from '../../public/images/icon-git.svg';
-import IconTg from '../../public/images/icon-tg.svg';
-import IconVk from '../../public/images/icon-vk.svg';
-import Logo from '../../public/images/logo.png';
+import IconGit from '../../public/images/icon-git.webp';
+import IconTg from '../../public/images/icon-tg.webp';
+import IconVk from '../../public/images/icon-vk.webp';
+import Logo from '../../public/images/logo.webp';
 import Question from '../../public/images/question.webp';
 
 const SOCIAL_LINKS = [

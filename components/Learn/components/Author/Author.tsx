@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import AuthorImage from '../../../../public/images/author.png';
+import AuthorImage from '../../../../public/images/author.webp';
 
 const LINK = 'https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D1%82%D1%87%D0%B5%D1%82%D1%82,_%D0%A2%D0%B5%D1%80%D1%80%D0%B8';
 

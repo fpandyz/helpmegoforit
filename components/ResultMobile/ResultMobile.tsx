@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useRef } from 'react';
 import { Card } from '../Card/Card';
-import IconArrow from '../../public/images/arrow.svg';
+import IconArrow from '../../public/images/arrow.webp';
 
 const RESULT_MOBILE_CARDS = [
   {
