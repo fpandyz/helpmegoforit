@@ -2,6 +2,7 @@ import Image from 'next/image';
 import AuthorImage from '../../../../public/images/author.webp';
 
 const LINK = 'https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D1%82%D1%87%D0%B5%D1%82%D1%82,_%D0%A2%D0%B5%D1%80%D1%80%D0%B8';
+const START_EXPERIENCE_YEAR = 2012;
 
 export function Author() {
   return (
@@ -27,7 +28,10 @@ export function Author() {
         <div className="author__wrapper">
           <div className="text-type-2 author__name ">Александр Шинкарев</div>
           <div className="text-type-2 author__description">
-            Автор курса, разработчик с 12-летним опытом, фанат&nbsp;
+            Автор курса, разработчик с
+            {' '}
+            {new Date().getFullYear() - START_EXPERIENCE_YEAR}
+            -летним опытом, фанат&nbsp;
             <a className="link" href={LINK} target="_blank">Терри&nbsp;Пратчетта</a>
           </div>
         </div>
