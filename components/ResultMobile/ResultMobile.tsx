@@ -60,6 +60,7 @@ export function ResultMobile() {
               playsInline
               muted
               preload="auto"
+              poster="images/puzzle-poster.webp"
             />
           </div>
         </div>
