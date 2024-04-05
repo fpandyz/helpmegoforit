@@ -28,6 +28,7 @@ export function About() {
             playsInline
             muted
             preload="auto"
+            poster="images/puzzle-poster.webp"
           />
         </div>
         <h2 className="about__title title-type-2">
