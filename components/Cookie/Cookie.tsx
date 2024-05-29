@@ -15,7 +15,6 @@ export const optionYandexMetrika: OptionYM = {
 
 export function Cookie() {
   const [isCookie, setIsCookie] = useState(true);
-  const date = new Date();
 
   const isMetricsEnabled = process.env.NODE_ENV === 'production';
 
@@ -80,8 +79,6 @@ export function Cookie() {
     setIsCookie(true);
 
     if (isMetricsEnabled) {
-      window.gtag('js', date);
-
       window.ym(96806068, 'init', optionYandexMetrika);
     }
   }
